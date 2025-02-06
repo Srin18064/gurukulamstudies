@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAC Properties Contact</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #f0f0f0; /* Light gray background for header */
+            padding: 20px;
+            display: flex;
+            justify-content: space-between; /* Align items to left and right */
+            align-items: center; /* Vertically center items */
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav li {
+            margin-left: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333; /* Dark gray link color */
+            padding: 5px 10px; /* Add some padding around links */
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            justify-content: space-around; /* Distribute addresses evenly */
+            padding: 20px;
+        }
+        .address-block {
+            width: 30%; /* Adjust width as needed */
+            border: 1px solid #ccc; /* Light gray border */
+            padding: 20px;
+            margin-bottom: 20px; /* Add spacing between blocks */
+            box-sizing: border-box; /* Include padding and border in width calculation */
+        }
+        .address-block h2 {
+            margin-top: 0;
+        }
+        .map-link {
+            display: block; /* Make the link a block element for better styling */
+            margin-top: 10px;
+        }
+        footer {
+            background-color: #333; /* Dark background for footer */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .address-block {
+                width: 45%; /* Two blocks per row on medium screens */
+            }
+        }
+
+        @media (max-width: 500px) {
+            .address-block {
+                width: 90%; /* One block per row on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="your_logo.png" alt="DAC Logo">  </div>
+        <nav>
+            <ul>
+                <li><a href="#">ABOUT DAC</a></li>
+                <li><a href="#">CAREERS</a></li>
+                <li><a href="#">MEDIA</a></li>
+                <li><a href="#">APARTMENTS</a></li>
+                <li><a href="#">VILLAS</a></li>
+                <li><a href="#">PLOTS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="address-block">
+            <h2>CORPORATE OFFICE</h2>
+            <p>No. 19, K-Block,<br>
+               A-1 Ground Floor,<br>
+               Anna Nagar East, Chennai-600 102</p>
+            <a class="map-link" href="#">Google Map View</a>
+        </div>
+        <div class="address-block">
+            <h2>COIMBATORE BRANCH</h2>
+            <p>No.129/57, 3rd Street,<br>
+               Bharathi Colony, Peelamedu<br>
+               Coimbatore-641004</p>
+            <a class="map-link" href="#">Google Map View</a>
+        </div>
+        <div class="address-block">
+            <h2>DAC OVERSEAS REAL ESTATE LLC</h2>
+            <p>Business Village, 301 Office, #45, 3rd Floor<br>
+               Block B, Port Saeed Deira. Dubai - UAE</p>
+        </div>
+        <div class="address-block">
+            <h2>DAC OVERSEAS REAL ESTATE (SINGAPORE) PTE.LTD</h2>
+            <p>16 Kallang Place, 07-10, Room: B11-00<br>
+               Singapore- (339156)</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 DAC Properties. All rights reserved. | <a href="#">Contact Us</a></p>
+    </footer>
+
+</body>
+</html>

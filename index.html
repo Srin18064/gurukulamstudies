@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurukulam Studies</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="siteNavigation" class="siteNavigation">
+        <div class="navigation">
+            <div class="mobileNavigation">
+                <div class="mobBoderBox">
+                    <p style="margin: 0 auto; padding: 0;">Innovation is our pledge</p>
+                    <div class="mobNavView">
+                        <a href=""><div>
+                            <img src="images/icons8-end-call-24.png" style="width: 20px; height: 20px;" alt="">
+                            <p style="margin: 0;">call us</p>
+                        </div></a>
+                        <a href=""><div>
+                            <img src="images/icons8-inquiry-48.png" style="width: 20px; height: 20px;" alt="">
+                            <p style="margin: 0;">enquiry</p>
+                        </div></a>
+                        <a href=""><img style="max-width: 48px; width: 48px;" src="images/gurukulamLogo.png" alt=""></a>
+                        <a href=""><div>
+                            <img src="images/icons8-university-50.png" style="width: 20px; height: 20px;" alt="">
+                            <p style="margin: 0;">collages</p>
+                        </div></a>
+                        <a href=""><div>
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                                <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 L 0 7.5 z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 L 0 22.5 z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 L 0 37.5 z"></path>
+                                </svg>
+                                <p style="margin: 0;">Menu</p>
+                        </div></a>
+                    </div>
+                </div>
+            </div>
+            <div class="wideNavigation">
+                <div style="display: flex;">
+                    <div class="navigation" style="width: 10vw;"></div>
+                    <div class="navigation" style="width: 80vw;">
+                        <div style="width: fit-content; margin: 0 auto;">
+                            <div style="display: flex; align-items: center;">
+                                <div class="navLeft navSec">
+                                    <a href="">about</a>
+                                    <span style="width: 1px; height: 24px; margin: auto 1px; background-color: black;"></span>
+                                    <a href="">media</a>
+                                    <span style="width: 1px; height: 24px; margin: auto 1px; background-color: black;"></span>
+                                    <a href="">career</a>
+                                </div>
+                                <div class="navCenter navSec">
+                                    <img src="images/gurukulamLogo.png" style="max-width: 4vw;" class="" alt="">
+                                </div>
+                                <div class="navRight navSec navbar">
+                                    <a href="#apartments" onclick="showPopup('apartments')">Apartments</a>
+                                    <span style="width: 1px; height: 24px; margin: auto 1px; background-color: black;"></span>
+                                        <a href="#villas" onclick="showPopup('villas')">Villas</a>
+                                        <span style="width: 1px; height: 24px; margin: auto 1px; background-color: black;"></span>
+                                        <a href="#plots" onclick="showPopup('plots')">Plots</a>
+                                
+                                    </div>
+                                
+                                
+                                
+                                    <div id="apartments" class="popup">
+                                        <button class="close" onclick="closePopup('apartments')">Close</button>
+                                        <h1>Apartments</h1>
+                                        <p>Welcome to the home page.</p>
+                                    </div>
+                                    <div id="villas" class="popup">
+                                        <button class="close" onclick="closePopup('services')">Close</button>
+                                        <h1>Services</h1>
+                                        <p>Our services are top-notch.</p>
+                                    </div>
+                                    <div id="about" class="popup">
+                                        <button class="close" onclick="closePopup('about')">Close</button>
+                                        <h1>About</h1>
+                                        <p>Learn more about us.</p>
+                                    </div>
+                                    <div id="contact" class="popup">
+                                        <button class="close" onclick="closePopup('contact')">Close</button>
+                                        <h1>Contact</h1>
+                                        <p>Get in touch with us.</p>
+                                    </div>
+                                    <div id="more" class="popup">
+                                        <button class="close" onclick="closePopup('more')">Close</button>
+                                        <h1>More</h1>
+                                        <p>Find out more information.</p>
+                                
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navigation">
+                        
+                        <a href="" class="menuButton">  Menu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="apartmentDiv">
+            <div >
+                <h2>Apartments</h2>
+                <hr>
+                <div style="display: flex; justify-content: left; gap: 1vw;">
+                    
+                    <a href="">Chennai</a>
+                    <a href="">Chengalpattu</a>
+                </div> 
+                <hr>
+            </div>
+        </div> -->
+    </div>
+
+<!-- side Menu -->
+<!-- 
+    <div class="sideMenu">
+        <img src="images/logo.jpg" alt="Wephoton" class="menuLogo">
+        <hr>
+    </div> -->
+
+<!-- page view -->
+
+
+    <div class="header">
+        <div class="topLogo">
+            <img src="images/gurukulamLogo.png" style="width: 10vw;" alt="">
+        </div>
+        <h1>Pathway to our collection of your homes</h1>
+        <div class="breadcrumb">Home » Ongoing</div>
+    </div>
+    <div class="main">
+        <h2>Apartments in Chennai</h2>
+        <button class="ongoing-button">ONGOING</button>
+        <div class="search-location">
+            <select id="filter" onchange="filterList()">
+                <option value="all"> Search All Location</option>
+                <option value="omr">OMR</option>
+                <option value="medavakkam">Medavakkam</option>
+                <option value="manapakkam">Manapakkam</option>
+            </select>
+        </div>
+    </div>
+    <div class="projects" id="itemList">
+        <div class="project omr">
+            <img src="dac_prathyangira.jpg" alt="DAC Prathyangira">
+            <h3>DAC Prathyangira</h3>
+            <p>OMR, Chennai</p>
+        </div>
+        <div class="project medavakkam">
+            <img src="dac_medallion.jpg" alt="DAC Medallion">
+            <h3>DAC Medallion</h3>
+            <p>Medavakkam, Chennai</p>
+        </div>
+        <div class="project manapakkam">
+            <img src="dac_manapark.jpg" alt="DAC Manapark">
+            <h3>DAC Manapark</h3>
+            <p>Manapakkam, Chennai</p>
+        </div>
+        <div class="project omr">
+            <img src="dac_prathyangira.jpg" alt="DAC Prathyangira">
+            <h3>DAC Prathyangira</h3>
+            <p>OMR, Chennai</p>
+        </div>
+        <div class="project medavakkam">
+            <img src="dac_medallion.jpg" alt="DAC Medallion">
+            <h3>DAC Medallion</h3>
+            <p>Medavakkam, Chennai</p>
+        </div>
+        <div class="project manapakkam">
+            <img src="dac_manapark.jpg" alt="DAC Manapark">
+            <h3>DAC Manapark</h3>
+            <p>Manapakkam, Chennai</p>
+        </div>
+        <div class="project omr">
+            <img src="dac_prathyangira.jpg" alt="DAC Prathyangira">
+            <h3>DAC Prathyangira</h3>
+            <p>OMR, Chennai</p>
+        </div>
+        <div class="project">
+            <img src="dac_medallion.jpg" alt="DAC Medallion">
+            <h3>DAC Medallion</h3>
+            <p>Medavakkam, Chennai</p>
+        </div>
+        <div class="project">
+            <img src="dac_manapark.jpg" alt="DAC Manapark">
+            <h3>DAC Manapark</h3>
+            <p>Manapakkam, Chennai</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer style="background-color: #002366; color: white; padding: 20px;">
+        <div class="footerGrid">
+          <div class="footerContenSec">
+            <h3 style="margin-left: auto; margin-right: auto;">Menu</h3>
+            <ul class="menuItems">
+              <li>Testimonials</li>
+              <li>Gallery & Events</li>
+              <li>NRI Hub</li>
+              <li>Careers</li>
+              <li>Joint Venture</li>
+              <li>Channel Partner</li>
+              <li>Referral Program</li>
+              <li>Suppliers</li>
+              <li>Blog</li>
+              <li>Contact Us</li>
+              <li>Privacy Policy</li>
+            </ul>
+          </div>
+          <hr style="height: 1px; width: 80vw; margin-left: auto; margin-right: auto;">
+          <div class="footerContenSec">
+            <h3>Ongoing Projects</h3>
+
+            <ul class="menuItems">
+              <li>Madambakkam</li>
+              <li>OMR</li>
+              <li>Manapakkam</li>
+              <li>Pallikaranai</li>
+              <li>Medavakkam</li>
+              <li>Pallavaram</li>
+              <li>Tambaram</li>
+              <li>Guduvanchery</li>
+            </ul>
+          </div>
+          <hr style="height: 1px; width: 80vw; margin-left: auto; margin-right: auto;">
+          <div class="footerContenSec">
+            
+            <ul>
+                <h3>Upcoming Projects</h3>
+              <li>RS Puram</li>
+              <li>Thudiyalur</li>
+            </ul>
+          </div>
+          <div class="footerContenSec">
+            
+            <ul>
+                <h3>Our Projects</h3>
+              <li>Apartments in Madambakkam</li>
+              <li>Apartments in East Tambaram</li>
+              <li>Apartments for sale in Madambakkam</li>
+              <li>Villa projects in Navalur</li>
+              <li>Villas in Madambakkam</li>
+              <li>Villas for sale in Madambakkam</li>
+              <li>Villas in Navalur</li>
+              <li>Villas in Navalur, Chennai</li>
+              <li>Villas in Medavakkam</li>
+              <li>Villas for sale in Medavakkam</li>
+              <li>Villas in Pallikaranai</li>
+              <li>Villas for sale in Pallikaranai</li>
+              <li>Apartment in Medavakkam</li>
+            </ul>
+          </div>
+          <div class="footerContenSec">
+            <h3>Corporate Office</h3>
+            <p>No: 19, K-Block,<br>
+               A-1 Ground Floor, Anna Nagar East,<br>
+               Chennai - 600 102.</p>
+            <p>CALL US<br>
+               +91 44 4210 3848 | +91 93003 93003</p>
+            <p>EMAIL US<br>
+               marketing@abcddevelopers.com</p>
+          </div>
+        </div>
+      </footer>
+      
+<!-- Javascript -->
+    <script>
+        function showPopup(id) {
+            var popups = document.getElementsByClassName('popup');
+            for (var i = 0; i < popups.length; i++) {
+                popups[i].classList.remove('active');
+            }
+            document.getElementById(id).classList.add('active');
+        }
+
+        function closePopup(id) {
+            document.getElementById(id).classList.remove('active');
+        }
+
+        document.querySelectorAll('.navbar a').forEach(item => {
+            item.addEventListener('mouseenter', function() {
+                showPopup(this.getAttribute('href').substring(1));
+            });
+        });
+
+             // Add event listener to close popup when clicking outside
+             document.addEventListener('click', function(event) {
+            var popups = document.getElementsByClassName('popup');
+            for (var i = 0; i < popups.length; i++) {
+                var popup = popups[i];
+                if (popup.classList.contains('active') && !popup.contains(event.target) && !event.target.closest('.navbar')) {
+                    popup.classList.remove('active');
+                }
+            }
+        });
+
+        
+    </script>
+
+<script>
+    function filterList() {
+        const filter = document.getElementById('filter').value;
+        const projects = document.getElementsByClassName('project');
+
+        for (let project of projects) {
+            if (filter === 'all') {
+                project.style.display = 'block';
+            } else {
+                if (project.classList.contains(filter)) {
+                    project.style.display = 'block';
+                } else {
+                    project.style.display = 'none';
+                }
+            }
+        }
+    }
+
+    window.onload = function() {
+        filterList(); // Default filter on page load
+    }
+</script>
+</body>
+</html>
