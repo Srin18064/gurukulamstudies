@@ -312,6 +312,17 @@ svg {
     margin-bottom: 20px;
 }
 
+.universityDetails {
+    padding: 8px;
+    border-radius: 24px;
+    background-color: #f02100;
+}
+.features div {
+    background-color: #fcb500;
+    border-radius: 16px;
+    margin: 12px 0;
+    padding: 8px;
+}
 .universityTitle {
     line-height: 1.5;
     padding: 4px;
@@ -325,6 +336,7 @@ svg {
 .features p {
     text-align: start;
     margin: 0 4px 4px 4px;
+    color: black;
     
 }
 .features div {
@@ -349,11 +361,9 @@ svg {
 }
 .project h3 {
     margin: 10px 0;
-    color: #003366;
+    
 }
-.project p {
-    color: #666;
-}
+
 
 
 /*  footer */
