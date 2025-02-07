@@ -49,7 +49,7 @@
                                     <a href="">career</a>
                                 </div>
                                 <div class="navCenter navSec">
-                                    <img src="images/gurukulamLogo.png" style="max-width: 4vw;" class="" alt="">
+                                    <img src="images/glogo.png" style="max-width: 4vw;" class="" alt="">
                                 </div>
                                 <div class="navRight navSec navbar">
                                     <a href="#apartments" onclick="showPopup('apartments')">Apartments</a>
@@ -93,8 +93,13 @@
                         </div>
                     </div>
                     <div class="navigation">
-                        
-                        <a href="" class="menuButton">  Menu</a>
+                    
+                        <a href="" class="menuButton"> <div>
+                            <svg style="display: inline-block;" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+                                <g fill="#fefefe" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M38,14h-32v-4c0,-2.2 1.8,-4 4,-4h32v4c0,2.2 -1.8,4 -4,4zM42,24v-4h-32c-2.2,0 -4,1.8 -4,4v4h32c2.2,0 4,-1.8 4,-4zM42,38v-4h-32c-2.2,0 -4,1.8 -4,4v4h32c2.2,0 4,-1.8 4,-4z"></path></g></g>
+                                </svg>
+                                <h2 style="display: inline-block;">Menu</h2>
+                        </div></a>
                     </div>
                 </div>
             </div>
@@ -125,69 +130,86 @@
 
     <div class="header">
         <div class="topLogo">
-            <img src="images/gurukulamLogo.png" style="width: 10vw;" alt="">
+            <img src="images/glogo.png" style="width: 10vw;" alt="">
         </div>
-        <h1>Pathway to our collection of your homes</h1>
-        <div class="breadcrumb">Home » Ongoing</div>
+        <h1>Pathway to your MBBS dreams in Abroad</h1>
+        <div class="breadcrumb">Admissions » Ongoing</div>
     </div>
     <div class="main">
-        <h2>Apartments in Chennai</h2>
-        <button class="ongoing-button">ONGOING</button>
+        <h2>Study MBBS in Vietnam</h2>
+        <button class="ongoing-button">Universities</button>
         <div class="search-location">
             <select id="filter" onchange="filterList()">
-                <option value="all"> Search All Location</option>
-                <option value="omr">OMR</option>
-                <option value="medavakkam">Medavakkam</option>
-                <option value="manapakkam">Manapakkam</option>
+                <option value="all"> Search All Universities</option>
+                <option value="ctu">Can Tho University</option>
+                <option value="pctu">Phan Chau Trinh University</option>
+                <option value="dnu">Dam Nam University</option>
             </select>
         </div>
     </div>
     <div class="projects" id="itemList">
-        <div class="project omr">
-            <img src="dac_prathyangira.jpg" alt="DAC Prathyangira">
-            <h3>DAC Prathyangira</h3>
-            <p>OMR, Chennai</p>
+        <div class="project ctu">
+            <div class="universityTitle">
+                <h2 style="display: inline-block;">Phan Chau Trinh University</h2>
+                <!-- <img src="images/universities/images.png" alt="" style="width: 100px; display: inline-block; height:100px"> -->
+            </div>
+            <div style="padding: 4px; border-radius: 12px;">
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/e7Zfy3OqdHY?si=NOgWXre5B6vw3BiM?controls=1" 
+                        frameborder="0" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <div style="padding: 8px;">
+                <div class="fees">
+                    <h2>University Fee : <span>4 Lakhs / Year</span></h2>
+                </div>
+                <div class="features">
+                    <div>
+                        <h3>Institution Overview</h3>
+                    <p>🎓 Top Private University</p>
+                    </div>
+                    <div>
+                        <h3>Accreditation and Curriculum</h3>
+                    <p>✅ NMC-Recognised for Indian Students</p>
+                    <p>📘 US-Modeled Curriculum, NEXT/USMLE Ready</p>
+                    </div>
+                    <div>
+                        <h3>Facilities and Features</h3>
+                        <p>🏥 Clinical Exposure Starting from 1st Year </p>
+                        <P>🏢 Medical Museum, Simulation Hospital & Stem Cell Research Centre </P>
+                        <p>🏨 9 University-Owned Hospitals </p>
+                        <p>🛌 Luxurious Hostel with Indian Food</p>
+                    </div>
+                    <div>
+                        <h3> Tution and Expenses</h3>
+                        <p>💸 Affordable Tuition at ₹4 Lakhs per Year</p>
+                    </div>
+                    <div>
+                        <h3>Additional Academic Opportunities</h3>
+                        <p>🧬 Hands-On Anatomy with 25+ Cadavers</p>
+                    </div>
+                    <div>
+                        <h3>Accessibility</h3>
+                        <p>✈️ Direct, 4-Hour Flight from India</p>
+                    </div>
+
+                </div>
+            </div>
         </div>
-        <div class="project medavakkam">
+        <div class="project pctu">
             <img src="dac_medallion.jpg" alt="DAC Medallion">
             <h3>DAC Medallion</h3>
             <p>Medavakkam, Chennai</p>
         </div>
-        <div class="project manapakkam">
+        <div class="project dnu">
             <img src="dac_manapark.jpg" alt="DAC Manapark">
             <h3>DAC Manapark</h3>
             <p>Manapakkam, Chennai</p>
         </div>
-        <div class="project omr">
-            <img src="dac_prathyangira.jpg" alt="DAC Prathyangira">
-            <h3>DAC Prathyangira</h3>
-            <p>OMR, Chennai</p>
-        </div>
-        <div class="project medavakkam">
-            <img src="dac_medallion.jpg" alt="DAC Medallion">
-            <h3>DAC Medallion</h3>
-            <p>Medavakkam, Chennai</p>
-        </div>
-        <div class="project manapakkam">
-            <img src="dac_manapark.jpg" alt="DAC Manapark">
-            <h3>DAC Manapark</h3>
-            <p>Manapakkam, Chennai</p>
-        </div>
-        <div class="project omr">
-            <img src="dac_prathyangira.jpg" alt="DAC Prathyangira">
-            <h3>DAC Prathyangira</h3>
-            <p>OMR, Chennai</p>
-        </div>
-        <div class="project">
-            <img src="dac_medallion.jpg" alt="DAC Medallion">
-            <h3>DAC Medallion</h3>
-            <p>Medavakkam, Chennai</p>
-        </div>
-        <div class="project">
-            <img src="dac_manapark.jpg" alt="DAC Manapark">
-            <h3>DAC Manapark</h3>
-            <p>Manapakkam, Chennai</p>
-        </div>
+
     </div>
 
     <!-- Footer -->
@@ -197,47 +219,28 @@
           <div class="footerContenSec">
             <h3 style="margin-left: auto; margin-right: auto;">Menu</h3>
             <ul class="menuItems">
-              <li>Testimonials</li>
-              <li>Gallery & Events</li>
-              <li>NRI Hub</li>
-              <li>Careers</li>
-              <li>Joint Venture</li>
-              <li>Channel Partner</li>
-              <li>Referral Program</li>
-              <li>Suppliers</li>
-              <li>Blog</li>
-              <li>Contact Us</li>
-              <li>Privacy Policy</li>
+              <li><a href="" class="animated-underline">Testimonials</a></li>
+              <li><a href="" class="animated-underline">Gallery & Events</a></li>
+              <li><a href="" class="animated-underline">Careers</a></li>
+              <li><a href="" class="animated-underline">Blog</a></li>
+              <li><a href="" class="animated-underline">Contact Us</a></li>
+              <li><a href="" class="animated-underline">Privacy Policy</a></li>
             </ul>
           </div>
-          <hr style="height: 1px; width: 80vw; margin-left: auto; margin-right: auto;">
-          <div class="footerContenSec">
-            <h3>Ongoing Projects</h3>
 
+          <hr style="height: 1px; width: 80vw; margin-left: auto; margin-right: auto;">
+          <div class="footerContenSec">
+            <h3>Our Partners</h3>
             <ul class="menuItems">
-              <li>Madambakkam</li>
-              <li>OMR</li>
-              <li>Manapakkam</li>
-              <li>Pallikaranai</li>
-              <li>Medavakkam</li>
-              <li>Pallavaram</li>
-              <li>Tambaram</li>
-              <li>Guduvanchery</li>
+              <li><a href="canthouniversity.html" class="animated-underline">Can Tho University</a></li>
+              <li><a href="panchautrinhuniversity.html" class="animated-underline">Phan Chau Trinh University</a></li>
+              <li><a href="damnamuniversity.html" class="animated-underline">Dam Nam University</a></li>
             </ul>
           </div>
           <hr style="height: 1px; width: 80vw; margin-left: auto; margin-right: auto;">
-          <div class="footerContenSec">
-            
+
+          <!-- <div class="footerContenSec">
             <ul>
-                <h3>Upcoming Projects</h3>
-              <li>RS Puram</li>
-              <li>Thudiyalur</li>
-            </ul>
-          </div>
-          <div class="footerContenSec">
-            
-            <ul>
-                <h3>Our Projects</h3>
               <li>Apartments in Madambakkam</li>
               <li>Apartments in East Tambaram</li>
               <li>Apartments for sale in Madambakkam</li>
@@ -262,7 +265,7 @@
                +91 44 4210 3848 | +91 93003 93003</p>
             <p>EMAIL US<br>
                marketing@abcddevelopers.com</p>
-          </div>
+          </div> -->
         </div>
       </footer>
       
