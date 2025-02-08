@@ -14,7 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const emailError = document.getElementById("emailError");
     const menuButton = document.getElementById("menuButton");
     const sideMenu = document.getElementById("sideMenu");
-    const menuButton1 = document.getElementById("menuButton1");
+    const mobileMenuButton = document.getElementById("menuButton1");
+    const sideMenu1 = document.getElementById("sideMenu1");
 
 
     // Show popup when Apply button is clicked
@@ -41,29 +42,23 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    menuButton.addEventListener("click", function () {
+    function toggleMenu() {
         if (sideMenu.style.left === "-500px") {
             sideMenu.style.left = "0";
         } else {
             sideMenu.style.left = "-500px";
         }
-    });
+    }
+
+    menuButton.addEventListener("click", toggleMenu);
+    mobileMenuButton.addEventListener("click", toggleMenu);
 
     window.addEventListener("click", function (event) {
-        if (event.target !== menuButton && !sideMenu.contains(event.target)) {
-            sideMenu.style.left = "-500px";
-        }
-    });
-    menuButton1.addEventListener("click", function () {
-        if (sideMenu.style.left === "-500px") {
-            sideMenu.style.left = "0";
-        } else {
-            sideMenu.style.left = "-500px";
-        }
-    });
-
-    window.addEventListener("click", function (event) {
-        if (event.target !== menuButton1 && !sideMenu.contains(event.target)) {
+        if (
+            event.target !== menuButton &&
+            event.target !== mobileMenuButton &&
+            !sideMenu.contains(event.target)
+        ) {
             sideMenu.style.left = "-500px";
         }
     });
