@@ -43,10 +43,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     function toggleMenu() {
-        if (sideMenu.style.left === "-500px") {
+        if (sideMenu.style.left === "-300px") {
             sideMenu.style.left = "0";
         } else {
-            sideMenu.style.left = "-500px";
+            sideMenu.style.left = "-300px";
         }
     }
 
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
             event.target !== mobileMenuButton &&
             !sideMenu.contains(event.target)
         ) {
-            sideMenu.style.left = "-500px";
+            sideMenu.style.left = "-300px";
         }
     });
 
