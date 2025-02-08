@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const menuButton = document.getElementById("menuButton");
     const sideMenu = document.getElementById("sideMenu");
     const mobileMenuButton = document.getElementById("menuButton1");
-    const sideMenu1 = document.getElementById("sideMenu1");
+    const sideCloseButton = document.getElementById("sideCloseButton");
 
 
     // Show popup when Apply button is clicked
@@ -62,6 +62,8 @@ document.addEventListener("DOMContentLoaded", function () {
             sideMenu.style.left = "-300px";
         }
     });
+
+    sideCloseButton.addEventListener("click", toggleMenu);
 
     // Form validation on submit
     applicationForm.addEventListener("submit", function (event) {
