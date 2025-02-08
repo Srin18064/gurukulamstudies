@@ -3,123 +3,313 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DAC Properties Contact</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        header {
-            background-color: #f0f0f0; /* Light gray background for header */
-            padding: 20px;
-            display: flex;
-            justify-content: space-between; /* Align items to left and right */
-            align-items: center; /* Vertically center items */
-        }
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-        nav li {
-            margin-left: 20px;
-        }
-        nav a {
-            text-decoration: none;
-            color: #333; /* Dark gray link color */
-            padding: 5px 10px; /* Add some padding around links */
-        }
-        .container {
-            display: flex;
-            flex-wrap: wrap; /* Allow wrapping on smaller screens */
-            justify-content: space-around; /* Distribute addresses evenly */
-            padding: 20px;
-        }
-        .address-block {
-            width: 30%; /* Adjust width as needed */
-            border: 1px solid #ccc; /* Light gray border */
-            padding: 20px;
-            margin-bottom: 20px; /* Add spacing between blocks */
-            box-sizing: border-box; /* Include padding and border in width calculation */
-        }
-        .address-block h2 {
-            margin-top: 0;
-        }
-        .map-link {
-            display: block; /* Make the link a block element for better styling */
-            margin-top: 10px;
-        }
-        footer {
-            background-color: #333; /* Dark background for footer */
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .address-block {
-                width: 45%; /* Two blocks per row on medium screens */
-            }
-        }
-
-        @media (max-width: 500px) {
-            .address-block {
-                width: 90%; /* One block per row on small screens */
-            }
-        }
-    </style>
+    <title>Gurukulam Studies</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
 </head>
 <body>
+    <div id="siteNavigation" class="siteNavigation">
+        <div class="navigation">
+            <div class="mobileNavigation">
+                <div class="mobBoderBox">
+                    <p style="margin: 0 auto; padding: 0;">Innovation is our pledge</p>
+                    <div class="mobNavView">
+                        <a href=""><div>
+                            <img src="images/icons8-end-call-24.png" style="width: 20px; height: 20px;" alt="">
+                            <p style="margin: 0;">call us</p>
+                        </div></a>
+                        <a href=""><div>
+                            <img src="images/icons8-inquiry-48.png" style="width: 20px; height: 20px;" alt="">
+                            <p style="margin: 0;">enquiry</p>
+                        </div></a>
+                        <a href=""><img style="max-width: 48px; width: 48px;" src="images/gurukulamLogo.png" alt=""></a>
+                        <a href=""><div>
+                            <img src="images/icons8-university-50.png" style="width: 20px; height: 20px;" alt="">
+                            <p style="margin: 0;">collages</p>
+                        </div></a>
+                        <a href=""><div>
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                                <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 L 0 7.5 z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 L 0 22.5 z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 L 0 37.5 z"></path>
+                                </svg>
+                                <p style="margin: 0;">Menu</p>
+                        </div></a>
+                    </div>
+                </div>
+            </div>
+            <div class="wideNavigation">
+                <div style="display: flex;">
+                    <div class="navigation" style="width: 10vw;"></div>
+                    <div class="navigation" style="width: 80vw;">
+                        <div style="width: fit-content; margin: 0 auto;">
+                            <div style="display: flex; align-items: center;">
+                                <div class="navLeft navSec">
+                                    <a href="">about</a>
+                                    <span style="width: 1px; height: 24px; margin: auto 1px; background-color: black;"></span>
+                                    <a href="">media</a>
+                                    <span style="width: 1px; height: 24px; margin: auto 1px; background-color: black;"></span>
+                                    <a href="">career</a>
+                                </div>
+                                <div class="navCenter navSec">
+                                    <img src="images/glogo.png" style="max-width: 4vw;" class="" alt="">
+                                </div>
+                                <div class="navRight navSec navbar">
+                                    <a href="#apartments" onclick="showPopup('apartments')">Apartments</a>
+                                    <span style="width: 1px; height: 24px; margin: auto 1px; background-color: black;"></span>
+                                        <a href="#villas" onclick="showPopup('villas')">Villas</a>
+                                        <span style="width: 1px; height: 24px; margin: auto 1px; background-color: black;"></span>
+                                        <a href="#plots" onclick="showPopup('plots')">Plots</a>
+                                
+                                    </div>
+                                
+                                
+                                
+                                    <div id="apartments" class="popup">
+                                        <button class="close" onclick="closePopup('apartments')">Close</button>
+                                        <h1>Apartments</h1>
+                                        <p>Welcome to the home page.</p>
+                                    </div>
+                                    <div id="villas" class="popup">
+                                        <button class="close" onclick="closePopup('services')">Close</button>
+                                        <h1>Services</h1>
+                                        <p>Our services are top-notch.</p>
+                                    </div>
+                                    <div id="about" class="popup">
+                                        <button class="close" onclick="closePopup('about')">Close</button>
+                                        <h1>About</h1>
+                                        <p>Learn more about us.</p>
+                                    </div>
+                                    <div id="contact" class="popup">
+                                        <button class="close" onclick="closePopup('contact')">Close</button>
+                                        <h1>Contact</h1>
+                                        <p>Get in touch with us.</p>
+                                    </div>
+                                    <div id="more" class="popup">
+                                        <button class="close" onclick="closePopup('more')">Close</button>
+                                        <h1>More</h1>
+                                        <p>Find out more information.</p>
+                                
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navigation">
+                    
+                        <a href="" class="menuButton"> <div>
+                            <svg style="display: inline-block;" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+                                <g fill="#fefefe" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M38,14h-32v-4c0,-2.2 1.8,-4 4,-4h32v4c0,2.2 -1.8,4 -4,4zM42,24v-4h-32c-2.2,0 -4,1.8 -4,4v4h32c2.2,0 4,-1.8 4,-4zM42,38v-4h-32c-2.2,0 -4,1.8 -4,4v4h32c2.2,0 4,-1.8 4,-4z"></path></g></g>
+                                </svg>
+                                <h2 style="display: inline-block;">Menu</h2>
+                        </div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="apartmentDiv">
+            <div >
+                <h2>Apartments</h2>
+                <hr>
+                <div style="display: flex; justify-content: left; gap: 1vw;">
+                    
+                    <a href="">Chennai</a>
+                    <a href="">Chengalpattu</a>
+                </div> 
+                <hr>
+            </div>
+        </div> -->
+    </div>
 
-    <header>
-        <div>
-            <img src="your_logo.png" alt="DAC Logo">  </div>
-        <nav>
-            <ul>
-                <li><a href="#">ABOUT DAC</a></li>
-                <li><a href="#">CAREERS</a></li>
-                <li><a href="#">MEDIA</a></li>
-                <li><a href="#">APARTMENTS</a></li>
-                <li><a href="#">VILLAS</a></li>
-                <li><a href="#">PLOTS</a></li>
-            </ul>
-        </nav>
-    </header>
+<!-- side Menu -->
+<!-- 
+    <div class="sideMenu">
+        <img src="images/logo.jpg" alt="Wephoton" class="menuLogo">
+        <hr>
+    </div> -->
 
-    <div class="container">
-        <div class="address-block">
-            <h2>CORPORATE OFFICE</h2>
-            <p>No. 19, K-Block,<br>
-               A-1 Ground Floor,<br>
-               Anna Nagar East, Chennai-600 102</p>
-            <a class="map-link" href="#">Google Map View</a>
-        </div>
-        <div class="address-block">
-            <h2>COIMBATORE BRANCH</h2>
-            <p>No.129/57, 3rd Street,<br>
-               Bharathi Colony, Peelamedu<br>
-               Coimbatore-641004</p>
-            <a class="map-link" href="#">Google Map View</a>
-        </div>
-        <div class="address-block">
-            <h2>DAC OVERSEAS REAL ESTATE LLC</h2>
-            <p>Business Village, 301 Office, #45, 3rd Floor<br>
-               Block B, Port Saeed Deira. Dubai - UAE</p>
-        </div>
-        <div class="address-block">
-            <h2>DAC OVERSEAS REAL ESTATE (SINGAPORE) PTE.LTD</h2>
-            <p>16 Kallang Place, 07-10, Room: B11-00<br>
-               Singapore- (339156)</p>
+<!-- page view -->
+
+
+    <div class="header">
+        <div class="topLogo">
+            <img src="images/glogo.png" style="width: 10vw;" alt="">
         </div>
     </div>
 
-    <footer>
-        <p>&copy; 2023 DAC Properties. All rights reserved. | <a href="#">Contact Us</a></p>
-    </footer>
+    <div class="body">
+        <h1>About Us</h1>
+        <p><span style="color: #fcb100; font-weight: 600;">Gurukulam Studies</span>, a pioneering Indian organization that proudly stands to establish strategic collaborations with Vietnam’s Government and International Universities. Our mission is to provide aspiring medical students with unparalleled access to world-class infrastructure and education in Vietnam. We are here to transform your dreams into reality.</p>
+    </div>
 
+
+
+    <!-- Popup Form -->
+    <div id="popupForm" class="popup1">
+        <div class="popup-content1">
+            <span id="closeButton1" class="close1">&times;</span>
+            <h2 style="text-align: center;">Apply Now</h2>
+            <form id="applicationForm">
+                <label for="firstName">First Name: <span>*</span></label>
+                <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+                <span id="firstNameError" class="error"></span>
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Enter your last name">
+
+                <label for="mobile">Mobile: <span>*</span></label>
+                <input type="text" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+                <span id="mobileError" class="error"></span>
+
+                <label for="email">Email: <span>*</span></label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <span id="emailError" class="error"></span>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- form -->
+     <div class="enquiryForm">
+        <div style="padding: 4px; padding-top: 20px; border-radius: 12px;">
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/y_XaJ_jOBV0?si=aMGw5jIX60RbJ6yd?controls=1" 
+                    frameborder="0" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        <div style="margin: auto;">
+            <form action="" id="myForm">
+                <input type="text" id="firstName" class="contactInput" name="firstName" placeholder="First Name" required pattern="[A-Za-z]+" title="First name should only contain letters">
+                <input type="text" id="lastName" class="contactInput" name="lastName" placeholder="Last Name">
+                <input type="tel" name="phone" class="contactInput" id="phone" placeholder="Phone" required pattern="[0-9]{10}" title="Phone number should be 10 digits.">
+                <input type="email" name="email" class="contactInput" placeholder="E-mail" id="email" required>
+                <br>
+                <button type="submit" id="submit">Submit</button>
+            </form> 
+        </div>
+     </div>
+    <!-- Footer -->
+
+    <footer style="background-color: #002366; color: white; padding: 20px;">
+        <div class="footerGrid">
+          <div class="footerContenSec">
+            <h3 style="margin-left: auto; margin-right: auto;">Menu</h3>
+            <ul class="menuItems">
+              <li><a href="" class="animated-underline">Testimonials</a></li>
+              <li><a href="" class="animated-underline">Gallery & Events</a></li>
+              <li><a href="" class="animated-underline">Careers</a></li>
+              <li><a href="" class="animated-underline">Blog</a></li>
+              <li><a href="" class="animated-underline">Contact Us</a></li>
+              <li><a href="" class="animated-underline">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <hr style="height: 1px; width: 80vw; margin-left: auto; margin-right: auto;">
+          <div class="footerContenSec">
+            <h3>Our Partners</h3>
+            <ul class="menuItems">
+              <li><a href="canthouniversity.html" class="animated-underline">Can Tho University</a></li>
+              <li><a href="panchautrinhuniversity.html" class="animated-underline">Phan Chau Trinh University</a></li>
+              <li><a href="damnamuniversity.html" class="animated-underline">Dam Nam University</a></li>
+            </ul>
+          </div>
+          <hr style="height: 1px; width: 80vw; margin-left: auto; margin-right: auto;">
+
+          <!-- <div class="footerContenSec">
+            <ul>
+              <li>Apartments in Madambakkam</li>
+              <li>Apartments in East Tambaram</li>
+              <li>Apartments for sale in Madambakkam</li>
+              <li>Villa projects in Navalur</li>
+              <li>Villas in Madambakkam</li>
+              <li>Villas for sale in Madambakkam</li>
+              <li>Villas in Navalur</li>
+              <li>Villas in Navalur, Chennai</li>
+              <li>Villas in Medavakkam</li>
+              <li>Villas for sale in Medavakkam</li>
+              <li>Villas in Pallikaranai</li>
+              <li>Villas for sale in Pallikaranai</li>
+              <li>Apartment in Medavakkam</li>
+            </ul>
+          </div>
+          <div class="footerContenSec">
+            <h3>Corporate Office</h3>
+            <p>No: 19, K-Block,<br>
+               A-1 Ground Floor, Anna Nagar East,<br>
+               Chennai - 600 102.</p>
+            <p>CALL US<br>
+               +91 44 4210 3848 | +91 93003 93003</p>
+            <p>EMAIL US<br>
+               marketing@abcddevelopers.com</p>
+          </div> -->
+        </div>
+      </footer>
+      
+<!-- Javascript -->
+
+      <script>
+//         document.getElementById('applyButton').addEventListener('click', function() {
+//     document.getElementById('myForm').scrollIntoView({ behavior: 'smooth' });
+// });
+      </script>
+
+    <script src="js/script.js"></script>
+    <script>
+        function showPopup(id) {
+            var popups = document.getElementsByClassName('popup');
+            for (var i = 0; i < popups.length; i++) {
+                popups[i].classList.remove('active');
+            }
+            document.getElementById(id).classList.add('active');
+        }
+
+        function closePopup(id) {
+            document.getElementById(id).classList.remove('active');
+        }
+
+        document.querySelectorAll('.navbar a').forEach(item => {
+            item.addEventListener('mouseenter', function() {
+                showPopup(this.getAttribute('href').substring(1));
+            });
+        });
+
+             // Add event listener to close popup when clicking outside
+             document.addEventListener('click', function(event) {
+            var popups = document.getElementsByClassName('popup');
+            for (var i = 0; i < popups.length; i++) {
+                var popup = popups[i];
+                if (popup.classList.contains('active') && !popup.contains(event.target) && !event.target.closest('.navbar')) {
+                    popup.classList.remove('active');
+                }
+            }
+        });
+
+        
+    </script>
+
+<script>
+    function filterList() {
+        const filter = document.getElementById('filter').value;
+        const projects = document.getElementsByClassName('project');
+
+        for (let project of projects) {
+            if (filter === 'all') {
+                project.style.display = 'block';
+            } else {
+                if (project.classList.contains(filter)) {
+                    project.style.display = 'block';
+                } else {
+                    project.style.display = 'none';
+                }
+            }
+        }
+    }
+
+    window.onload = function() {
+        filterList(); // Default filter on page load
+    }
+</script>
 </body>
 </html>

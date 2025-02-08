@@ -1,10 +1,8 @@
 // script.js
 document.addEventListener("DOMContentLoaded", function () {
     const applyButton = document.getElementById("applyButton");
-    const applyButton1 = document.getElementById("applyButton1")
-    const applyButton2 = document.getElementById("applyButton2")
     const popupForm = document.getElementById("popupForm");
-    const closeButton = document.getElementById("closeButton1");
+    const closeButton = document.getElementById("closeButton");
     const applicationForm = document.getElementById("applicationForm");
     const firstNameInput = document.getElementById("firstName");
     const mobileInput = document.getElementById("mobile");
@@ -12,23 +10,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const firstNameError = document.getElementById("firstNameError");
     const mobileError = document.getElementById("mobileError");
     const emailError = document.getElementById("emailError");
-    const menuButton = document.getElementById("menuButton");
-    const sideMenu = document.getElementById("sideMenu");
-    const menuButton1 = document.getElementById("menuButton1");
-
 
     // Show popup when Apply button is clicked
     applyButton.addEventListener("click", function () {
         popupForm.style.display = "flex";
     });
 
-    applyButton1.addEventListener("click", function() {
-        popupForm.style.display = "flex";
-    });
-
-    applyButton2.addEventListener("click", function() {
-        popupForm.style.display = "flex";
-    });
     // Close popup when close button is clicked
     closeButton.addEventListener("click", function () {
         popupForm.style.display = "none";
@@ -38,33 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("click", function (event) {
         if (event.target === popupForm) {
             popupForm.style.display = "none";
-        }
-    });
-
-    menuButton.addEventListener("click", function () {
-        if (sideMenu.style.left === "-500px") {
-            sideMenu.style.left = "0";
-        } else {
-            sideMenu.style.left = "-500px";
-        }
-    });
-
-    window.addEventListener("click", function (event) {
-        if (event.target !== menuButton && !sideMenu.contains(event.target)) {
-            sideMenu.style.left = "-500px";
-        }
-    });
-    menuButton1.addEventListener("click", function () {
-        if (sideMenu.style.left === "-500px") {
-            sideMenu.style.left = "0";
-        } else {
-            sideMenu.style.left = "-500px";
-        }
-    });
-
-    window.addEventListener("click", function (event) {
-        if (event.target !== menuButton1 && !sideMenu.contains(event.target)) {
-            sideMenu.style.left = "-500px";
         }
     });
 

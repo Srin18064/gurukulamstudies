@@ -3,330 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gurukulam Studies</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Popup Form</title>
+    <link rel="stylesheet" href="css/test.css"> <!-- Link to your CSS file -->
 </head>
 <body>
-    <div id="siteNavigation" class="siteNavigation">
-        <div class="navigation">
-            <div class="mobileNavigation">
-                <div class="mobBoderBox">
-                    <p style="margin: 0 auto; padding: 0;">Innovation is our pledge</p>
-                    <div class="mobNavView">
-                        <a href=""><div>
-                            <img src="images/icons8-end-call-24.png" style="width: 20px; height: 20px;" alt="">
-                            <p style="margin: 0;">call us</p>
-                        </div></a>
-                        <a href=""><div>
-                            <img src="images/icons8-inquiry-48.png" style="width: 20px; height: 20px;" alt="">
-                            <p style="margin: 0;">enquiry</p>
-                        </div></a>
-                        <a href=""><img style="max-width: 48px; width: 48px;" src="images/gurukulamLogo.png" alt=""></a>
-                        <a href=""><div>
-                            <img src="images/icons8-university-50.png" style="width: 20px; height: 20px;" alt="">
-                            <p style="margin: 0;">collages</p>
-                        </div></a>
-                        <a href=""><div>
-                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
-                                <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 L 0 7.5 z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 L 0 22.5 z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 L 0 37.5 z"></path>
-                                </svg>
-                                <p style="margin: 0;">Menu</p>
-                        </div></a>
-                    </div>
-                </div>
-            </div>
-            <div class="wideNavigation">
-                <div style="display: flex;">
-                    <div class="navigation" style="width: 10vw;"></div>
-                    <div class="navigation" style="width: 80vw;">
-                        <div style="width: fit-content; margin: 0 auto;">
-                            <div style="display: flex; align-items: center;">
-                                <div class="navLeft navSec">
-                                    <a href="">about</a>
-                                    <span style="width: 1px; height: 24px; margin: auto 1px; background-color: black;"></span>
-                                    <a href="">media</a>
-                                    <span style="width: 1px; height: 24px; margin: auto 1px; background-color: black;"></span>
-                                    <a href="">career</a>
-                                </div>
-                                <div class="navCenter navSec">
-                                    <img src="images/glogo.png" style="max-width: 4vw;" class="" alt="">
-                                </div>
-                                <div class="navRight navSec navbar">
-                                    <a href="#apartments" onclick="showPopup('apartments')">Apartments</a>
-                                    <span style="width: 1px; height: 24px; margin: auto 1px; background-color: black;"></span>
-                                        <a href="#villas" onclick="showPopup('villas')">Villas</a>
-                                        <span style="width: 1px; height: 24px; margin: auto 1px; background-color: black;"></span>
-                                        <a href="#plots" onclick="showPopup('plots')">Plots</a>
-                                
-                                    </div>
-                                
-                                
-                                
-                                    <div id="apartments" class="popup">
-                                        <button class="close" onclick="closePopup('apartments')">Close</button>
-                                        <h1>Apartments</h1>
-                                        <p>Welcome to the home page.</p>
-                                    </div>
-                                    <div id="villas" class="popup">
-                                        <button class="close" onclick="closePopup('services')">Close</button>
-                                        <h1>Services</h1>
-                                        <p>Our services are top-notch.</p>
-                                    </div>
-                                    <div id="about" class="popup">
-                                        <button class="close" onclick="closePopup('about')">Close</button>
-                                        <h1>About</h1>
-                                        <p>Learn more about us.</p>
-                                    </div>
-                                    <div id="contact" class="popup">
-                                        <button class="close" onclick="closePopup('contact')">Close</button>
-                                        <h1>Contact</h1>
-                                        <p>Get in touch with us.</p>
-                                    </div>
-                                    <div id="more" class="popup">
-                                        <button class="close" onclick="closePopup('more')">Close</button>
-                                        <h1>More</h1>
-                                        <p>Find out more information.</p>
-                                
-                                
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="navigation">
-                    
-                        <a href="" class="menuButton"> <div>
-                            <svg style="display: inline-block;" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
-                                <g fill="#fefefe" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M38,14h-32v-4c0,-2.2 1.8,-4 4,-4h32v4c0,2.2 -1.8,4 -4,4zM42,24v-4h-32c-2.2,0 -4,1.8 -4,4v4h32c2.2,0 4,-1.8 4,-4zM42,38v-4h-32c-2.2,0 -4,1.8 -4,4v4h32c2.2,0 4,-1.8 4,-4z"></path></g></g>
-                                </svg>
-                                <h2 style="display: inline-block;">Menu</h2>
-                        </div></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- <div class="apartmentDiv">
-            <div >
-                <h2>Apartments</h2>
-                <hr>
-                <div style="display: flex; justify-content: left; gap: 1vw;">
-                    
-                    <a href="">Chennai</a>
-                    <a href="">Chengalpattu</a>
-                </div> 
-                <hr>
-            </div>
-        </div> -->
-    </div>
+    <!-- Apply Button -->
+    <button id="applyButton">Apply</button>
 
-<!-- side Menu -->
-<!-- 
-    <div class="sideMenu">
-        <img src="images/logo.jpg" alt="Wephoton" class="menuLogo">
-        <hr>
-    </div> -->
+    <!-- Popup Form -->
+    <div id="popupForm" class="popup">
+        <div class="popup-content">
+            <span id="closeButton" class="close">&times;</span>
+            <h2>Apply Now</h2>
+            <form id="applicationForm">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+                <span id="firstNameError" class="error"></span>
 
-<!-- page view -->
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Enter your last name">
 
+                <label for="mobile">Mobile:</label>
+                <input type="text" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+                <span id="mobileError" class="error"></span>
 
-    <div class="header">
-        <div class="topLogo">
-            <img src="images/glogo.png" style="width: 10vw;" alt="">
-        </div>
-        <h1>Pathway to your MBBS dreams in Abroad</h1>
-        <div class="breadcrumb">Admissions » Ongoing</div>
-    </div>
-    <div class="main">
-        <h2>Study MBBS in Vietnam</h2>
-        <button class="ongoing-button">Universities</button>
-        <div class="search-location">
-            <select id="filter" onchange="filterList()">
-                <option value="all"> Search All Universities</option>
-                <option value="ctu">Can Tho University</option>
-                <option value="pctu">Phan Chau Trinh University</option>
-                <option value="dnu">Dam Nam University</option>
-            </select>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <span id="emailError" class="error"></span>
+
+                <button type="submit">Submit</button>
+            </form>
         </div>
     </div>
-    <div class="projects" id="itemList">
-        <div class="project ctu">
-            <div class="universityTitle">
-                <h2 style="display: inline-block;">Phan Chau Trinh University</h2>
-                <!-- <img src="images/universities/images.png" alt="" style="width: 100px; display: inline-block; height:100px"> -->
-            </div>
-            <div style="padding: 4px; border-radius: 12px;">
-                <img src="images/universities/pctu.webp" style="border-radius: 16px;" alt="">
-            </div>
-            <div class="universityDetails" style="padding: 8px; background-color: #fcb500;">
-                <div class="fees">
-                    <h2>University Fee : <span>4 Lakhs / Year</span></h2>
-                </div>
-                <div class="features">
-                    <div>
-                        <h3>Institution Overview</h3>
-                    <p>🎓 Top Private University</p>
-                    </div>
-                    <div>
-                        <h3>Accreditation and Curriculum</h3>
-                    <p>✅ NMC-Recognised for Indian Students</p>
-                    <p>📘 US-Modeled Curriculum, NEXT/USMLE Ready</p>
-                    </div>
-                    <div>
-                        <h3>Facilities and Features</h3>
-                        <p>🏥 Clinical Exposure Starting from 1st Year </p>
-                        <P>🏢 Medical Museum, Simulation Hospital & Stem Cell Research Centre </P>
-                        <p>🏨 9 University-Owned Hospitals </p>
-                        <p>🛌 Luxurious Hostel with Indian Food</p>
-                    </div>
-                    <div>
-                        <h3> Tution and Expenses</h3>
-                        <p>💸 Affordable Tuition at ₹4 Lakhs per Year</p>
-                    </div>
-                    <div>
-                        <h3>Additional Academic Opportunities</h3>
-                        <p>🧬 Hands-On Anatomy with 25+ Cadavers</p>
-                    </div>
-                    <div>
-                        <h3>Accessibility</h3>
-                        <p>✈️ Direct, 4-Hour Flight from India</p>
-                    </div>
 
-                </div>
-                <div style="padding: 4px; border-radius: 12px;">
-                    <div class="video-container">
-                        <iframe 
-                            src="https://www.youtube.com/embed/e7Zfy3OqdHY?si=NOgWXre5B6vw3BiM?controls=1" 
-                            frameborder="0" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="project pctu">
-            <img src="dac_medallion.jpg" alt="DAC Medallion">
-            <h3>DAC Medallion</h3>
-            <p>Medavakkam, Chennai</p>
-        </div>
-        <div class="project dnu">
-            <img src="dac_manapark.jpg" alt="DAC Manapark">
-            <h3>DAC Manapark</h3>
-            <p>Manapakkam, Chennai</p>
-        </div>
-
-    </div>
-
-    <!-- Footer -->
-
-    <footer style="background-color: #002366; color: white; padding: 20px;">
-        <div class="footerGrid">
-          <div class="footerContenSec">
-            <h3 style="margin-left: auto; margin-right: auto;">Menu</h3>
-            <ul class="menuItems">
-              <li><a href="" class="animated-underline">Testimonials</a></li>
-              <li><a href="" class="animated-underline">Gallery & Events</a></li>
-              <li><a href="" class="animated-underline">Careers</a></li>
-              <li><a href="" class="animated-underline">Blog</a></li>
-              <li><a href="" class="animated-underline">Contact Us</a></li>
-              <li><a href="" class="animated-underline">Privacy Policy</a></li>
-            </ul>
-          </div>
-
-          <hr style="height: 1px; width: 80vw; margin-left: auto; margin-right: auto;">
-          <div class="footerContenSec">
-            <h3>Our Partners</h3>
-            <ul class="menuItems">
-              <li><a href="canthouniversity.html" class="animated-underline">Can Tho University</a></li>
-              <li><a href="panchautrinhuniversity.html" class="animated-underline">Phan Chau Trinh University</a></li>
-              <li><a href="damnamuniversity.html" class="animated-underline">Dam Nam University</a></li>
-            </ul>
-          </div>
-          <hr style="height: 1px; width: 80vw; margin-left: auto; margin-right: auto;">
-
-          <!-- <div class="footerContenSec">
-            <ul>
-              <li>Apartments in Madambakkam</li>
-              <li>Apartments in East Tambaram</li>
-              <li>Apartments for sale in Madambakkam</li>
-              <li>Villa projects in Navalur</li>
-              <li>Villas in Madambakkam</li>
-              <li>Villas for sale in Madambakkam</li>
-              <li>Villas in Navalur</li>
-              <li>Villas in Navalur, Chennai</li>
-              <li>Villas in Medavakkam</li>
-              <li>Villas for sale in Medavakkam</li>
-              <li>Villas in Pallikaranai</li>
-              <li>Villas for sale in Pallikaranai</li>
-              <li>Apartment in Medavakkam</li>
-            </ul>
-          </div>
-          <div class="footerContenSec">
-            <h3>Corporate Office</h3>
-            <p>No: 19, K-Block,<br>
-               A-1 Ground Floor, Anna Nagar East,<br>
-               Chennai - 600 102.</p>
-            <p>CALL US<br>
-               +91 44 4210 3848 | +91 93003 93003</p>
-            <p>EMAIL US<br>
-               marketing@abcddevelopers.com</p>
-          </div> -->
-        </div>
-      </footer>
-      
-<!-- Javascript -->
-    <script>
-        function showPopup(id) {
-            var popups = document.getElementsByClassName('popup');
-            for (var i = 0; i < popups.length; i++) {
-                popups[i].classList.remove('active');
-            }
-            document.getElementById(id).classList.add('active');
-        }
-
-        function closePopup(id) {
-            document.getElementById(id).classList.remove('active');
-        }
-
-        document.querySelectorAll('.navbar a').forEach(item => {
-            item.addEventListener('mouseenter', function() {
-                showPopup(this.getAttribute('href').substring(1));
-            });
-        });
-
-             // Add event listener to close popup when clicking outside
-             document.addEventListener('click', function(event) {
-            var popups = document.getElementsByClassName('popup');
-            for (var i = 0; i < popups.length; i++) {
-                var popup = popups[i];
-                if (popup.classList.contains('active') && !popup.contains(event.target) && !event.target.closest('.navbar')) {
-                    popup.classList.remove('active');
-                }
-            }
-        });
-
-        
-    </script>
-
-<script>
-    function filterList() {
-        const filter = document.getElementById('filter').value;
-        const projects = document.getElementsByClassName('project');
-
-        for (let project of projects) {
-            if (filter === 'all') {
-                project.style.display = 'block';
-            } else {
-                if (project.classList.contains(filter)) {
-                    project.style.display = 'block';
-                } else {
-                    project.style.display = 'none';
-                }
-            }
-        }
-    }
-
-    window.onload = function() {
-        filterList(); // Default filter on page load
-    }
-</script>
+    <script src="js/test.js"></script> <!-- Link to your JavaScript file -->
 </body>
 </html>

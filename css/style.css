@@ -272,7 +272,7 @@ svg {
     color: #666;
 }
 .main {
-    background-color: #003366;
+    background-color: #fcb500;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -294,6 +294,7 @@ svg {
     margin-right: auto !important;
     cursor: pointer;
     margin: 20px 0;
+    border-radius: 24px;
 }
 .search-location {
     margin: 20px 0;
@@ -301,6 +302,8 @@ svg {
 .search-location select {
     padding: 10px;
     width: 200px;
+    border-radius: 16px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
 .projects {
     display: flex;
@@ -356,14 +359,21 @@ svg {
 
 @media (max-width : 600px) {
     .project{
-        width: 80vw;
+        width: 100%;
     }
-    
+    .projects {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
 }
 
-@media (min-width : 600px) and (max-width: 900px) {
+@media (min-width : 600px) and (max-width: 1100px) {
     .project {
-        width: 40vw;
+        width: 48%;
+    }
+    .projects {
+        padding-left: 12px;
+        padding-right: 12px;
     }
 }
 .project img {
@@ -542,21 +552,21 @@ footer {
 /*  form */
 
 /* From Uiverse.io by satyamchaudharydev */ 
-.form {
+/* .form {
     --width-of-input: 200px;
     --border-height: 1px;
     --border-before-color: rgba(221, 221, 221, 0.39);
     --border-after-color: #5891ff;
-    --input-hovered-color: #4985e01f;
+    --input-hovered-color: #fcb100;
     position: relative;
     background-color: #003366;
     width: var(--width-of-input);
     border: 1px red solid;
     padding: 16px;
     margin: 8px;
-   }
+   } */
    /* styling of Input */
-   .input {
+   /* .input {
     color: #fff;
     font-size: 0.9rem;
     background-color: transparent;
@@ -566,7 +576,7 @@ footer {
     padding-block: 0.7em;
     border: none;
     border-bottom: var(--border-height) solid var(--border-before-color);
-   }
+   } */
    /* styling of animated border */
    .input-border {
     position: absolute;
@@ -629,14 +639,14 @@ footer {
     cursor: pointer;
 }
 
-form {
+/* form {
     width: 300px;
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
     background-color: #f9f9f9;
-}
+} */
 .myForm div {
     margin-bottom: 10px;
 }
@@ -644,19 +654,293 @@ label {
     display: inline-block;
     width: 100px;
 }
-input[type="text"], input[type="tel"], input[type="email"] {
+/* input[type="text"], input[type="tel"], input[type="email"] {
     width: calc(100% - 110px);
     padding: 5px;
+} */
+.applyButton {
+    width: fit-content;
+    padding: 4px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 16px;
+    height: 40px;
+    margin: 8px auto;
+    cursor: pointer;
 }
-button {
+.applyButton:hover {
+    background-color: #45a049;
+}
+
+.contactInput:focus {
+    background-color: aliceblue;
+}
+#myForm {
+    width: 45vw;
+    margin: 16px auto;
+}
+
+@media (max-width : 600px) {
+    #myForm {
+        width: 80vw;
+    }
+    
+    .video-container {
+        width: 90vw;
+    }
+}
+
+@media (min-width :600px) and (max-width : 1100px) {
+    #myForm {
+        width: 70vw;
+    }
+
+    .video-container {
+        width: 95vw;
+    }
+
+}
+
+@media (min-width : 1100px) {
+    .enquiryForm{
+        flex-direction: row;
+    }
+    .video-container{
+        width: 45vw;
+    }
+}
+.enquiryForm {
+    padding: 20px;
+    margin: 16px 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 12px auto;
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    border-radius: 8px;
+    /* background-color: #f9f9f9; */
+}
+
+.contactInput {
+    width: calc(100% - 8%);
+    height: 50px;
+    font-size: 24px;
+    margin: 8px auto;
+    border-radius: 25px;
+    padding-left: 4%;
+    padding-right: 4%;
+    border: 1px solid #fcb500;
+    box-shadow: 0, 0, 8px rgba(221, 221, 221, 0.39);
+}
+
+#submit {
+    width: 50%;
+    font-size: 24px;
+    height: 50px;
+    border-radius: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 8px;
+    color: white;
+    background-color: #f02100;
+    border: 1px solid #fcb500;
+}
+
+/* Hide the popup form by default
+#popupForm {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+    height: 50vh;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.popup1.active {
+    display: block;
+} */
+
+/* dee */
+
+/* styles.css */
+
+
+/* Popup Form Styling */
+.popup1 {
+    display: none; /* Hidden by default */
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup-content1 {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    min-width: 300px;
+    max-width: 700px;
+    width: 70vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.close1 {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close1:hover {
+    color: red;
+}
+
+#applicationForm label {
+    margin-left: 25px;
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+#applicationForm label span{
+    font-size: 16px;
+    display: inline-block;
+    color: red;
+    margin-top: 10px;
+}
+
+#applicationForm input {
+    width: calc(100% - 50px);
+    /* padding: 8px; */
+    padding: 0px 25px 0px 25px;
+    margin-top: 5px;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 24px;
+    font-size: 24px;
+}
+
+#applicationForm button {
     width: 100%;
     padding: 10px;
-    background-color: #4CAF50;
+    margin-top: 20px;
+    background-color: #28a745;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
-button:hover {
-    background-color: #45a049;
+
+#applicationForm button:hover {
+    background-color: #218838;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    display: none; /* Hidden by default */
+}
+
+/* sidemenu */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#menuButton {
+    font-size: 24px;
+    padding: 6px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    /* top: 20px; */
+    z-index: 1000;
+}
+
+#menuButton:hover {
+    background-color: #0056b3;
+}
+
+.mobNavView button {
+    margin: auto;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -500px;
+    width: 500px;
+    height: 100%;
+    background-color: #333;
+    transition: left 0.3s ease;
+    z-index: 999;
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 60px;
+}
+
+.side-menu ul li {
+    margin: 0;
+    padding: 0;
+}
+
+.side-menu ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.side-menu ul li a:hover {
+    background-color: #555;
+}
+
+.animated-underline {
+    position: relative;
+    text-decoration: none;
+}
+
+.animated-underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #007bff;
+    transition: width 0.3s ease;
+}
+
+.animated-underline:hover::after {
+    width: 100%;
 }
