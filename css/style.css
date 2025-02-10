@@ -70,6 +70,17 @@ h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
     .topLogo {
         display: block;
     }
+
+    #address {
+        display: block;
+        text-align: start;
+    }
+    #footerContentSec1 h3, ul {
+        padding-left: 20px ;
+    }
+    #footerContetSec0 h3, ul {
+        padding-left: 40px;
+    }
     .mobileNavigation {
         display: block;
         position: fixed;
@@ -79,7 +90,7 @@ h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
         height: 70px;
         text-align: center;
         z-index: 2;
-        background-color: #fbd10133;
+        background-color: #f02100;
         border-radius: 35px;
         border: 1px solid white;
         margin-left:9%;
@@ -120,11 +131,12 @@ h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
 
 }
 .mobNavView {
-    background-color: #f02100;
+    background-color: #fcb500;
     border-radius: 24px;
     height: 48px;
     margin-top: 0;
     display: flex;
+    color: black;
     flex-wrap: nowrap;
     padding: 0px 8px;
     justify-content: space-evenly;
@@ -259,7 +271,7 @@ svg {
 }
 
 .mobNavView a p{
-    color: white;
+    color: #000000;
 }
 
 
@@ -419,6 +431,12 @@ footer {
 .footerContenSec h3 {
     margin: 8px auto;
     padding-left: 40px;
+}
+
+.footerContenSec p{
+    margin: 16px auto;
+    padding-left: 40px;
+    line-height: 1.4;
 }
 
 .menuItems a {
@@ -912,7 +930,7 @@ body {
     margin: auto;
     background: transparent;
     border: none;
-    color: white;
+    color: #000000;
     font-size: 16px;
     cursor: pointer;
 }
@@ -922,7 +940,7 @@ body {
     left: -300px;
     width: 300px;
     height: 100%;
-    background-color: #333;
+    background-color: #fcb500;
     transition: left 0.3s ease;
     z-index: 999;
 }
@@ -936,12 +954,14 @@ body {
 
 .side-menu ul li {
     margin: 0;
-    padding: 0;
+    padding: 20px 0 0 0;
+    width: fit-content;
+    padding-left: 25px;
 }
 
 .side-menu ul li a {
     display: block;
-    padding: 15px 20px;
+    padding: 0px;
     color: white;
     text-decoration: none;
     font-size: 18px;
@@ -949,7 +969,9 @@ body {
 }
 
 .side-menu ul li a:hover {
-    background-color: #555;
+    color: #000000;
+    border-radius: 24px;
+
 }
 
 .animated-underline {
