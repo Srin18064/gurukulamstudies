@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    margin-top: #e30009;
+    margin-top: e30009;
     background-color: #fbd10133;
 }
 
@@ -47,7 +47,7 @@ body, td{
 .imgLeft  { float: left;   margin-right: 10px;  margin-bottom: 10px; }
 .imgRight { float: right;  margin-left: 10px;   margin-bottom: 10px; }
 
-hr { height: 1px;  color: #000;  background-color: #000;  margin-bottom: 15px; }
+hr { height: 1px;  color: #ffffff;  background-color: aliceblue;  margin-bottom: 15px; }
 
 h1 { margin: 0;  font-weight: bold;  font-size: 2em; }
 h2 { margin: 0;  font-weight: bold;  font-size: 1.6em; }
@@ -79,8 +79,9 @@ h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
         height: 70px;
         text-align: center;
         z-index: 2;
-        background-color: #d7d1c5;
+        background-color: #fbd10133;
         border-radius: 35px;
+        border: 1px solid white;
         margin-left:9%;
         margin-right: 9%;
     }
@@ -119,7 +120,7 @@ h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
 
 }
 .mobNavView {
-    background-color: blue;
+    background-color: #f02100;
     border-radius: 24px;
     height: 48px;
     margin-top: 0;
@@ -134,7 +135,7 @@ h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
 }
 
 .wideNavigation {
-    background-color: aliceblue;
+    background-color: #f02100;
     height: 70px;
     margin: auto;
     color: #000 !important;
@@ -165,8 +166,15 @@ h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
 }
 
 .navCenter {
-    max-width: 10vw;
+    width: 10vw;
     margin: 16px 0 0 0;
+    background-image: url('../images/gkbg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navCenter img {
 
 }
 .navRight {
@@ -258,10 +266,10 @@ svg {
 /*  view page */
 
 .header {
-    background-color: #fff;
+    /* background-color: #fff; */
     padding: 20px;
     text-align: center;
-    border-bottom: 1px solid #ddd;
+    /* border-bottom: 1px solid #ddd; */
 }
 .header h1 {
     /* margin: 80px 0 0 0; */
@@ -283,7 +291,7 @@ svg {
     margin: 0;
 }
 .ongoing-button {
-    background-color: #ff6600;
+    background-color: #f02100;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -389,7 +397,7 @@ svg {
     margin: 4px;
   padding: 8px;
   border-radius: 16px;
-  background-color: #fcb500;
+  /* background-color: #fcb500; */
   border: none;
 }
 
@@ -416,7 +424,7 @@ footer {
 .menuItems a {
     text-decoration: none;
     line-height: 1.5;
-    color: aliceblue;
+    
 }
 
 .menuItems a:hover {
@@ -661,7 +669,7 @@ label {
 .applyButton {
     width: fit-content;
     padding: 4px 16px;
-    background-color: #4CAF50;
+    background-color: #000000;
     color: white;
     border: none;
     font-size: 24px;
@@ -672,7 +680,10 @@ label {
     cursor: pointer;
 }
 .applyButton:hover {
-    background-color: #45a049;
+    background-color: #fcb500;
+    color: #000;
+    scale: 0.9;
+    animation: flip 500ms 200ms 1 linear;
 }
 
 .contactInput:focus {
@@ -733,10 +744,14 @@ label {
     border-radius: 25px;
     padding-left: 4%;
     padding-right: 4%;
-    border: 1px solid #fcb500;
+    background-color: #fcb500;
+    border: 1px solid #f02100;
     box-shadow: 0, 0, 8px rgba(221, 221, 221, 0.39);
 }
 
+.contactInput::placeholder {
+    font: 18px sans-serif;
+}
 #submit {
     width: 50%;
     font-size: 24px;
@@ -790,7 +805,7 @@ label {
 }
 
 .popup-content1 {
-    background-color: white;
+    background-color: #f02100;
     padding: 20px;
     border-radius: 8px;
     min-width: 300px;
@@ -831,25 +846,37 @@ label {
     /* padding: 8px; */
     padding: 0px 25px 0px 25px;
     margin-top: 5px;
-    height: 50px;
+    height: 40px;
     border: 1px solid #ccc;
     border-radius: 24px;
     font-size: 24px;
 }
 
+#applicationForm input::placeholder {
+    font: 16px sans-serif;
+}
+
 #applicationForm button {
-    width: 100%;
-    padding: 10px;
-    margin-top: 20px;
-    background-color: #28a745;
-    color: white;
+    width: 20vw;
+    max-width: 200px;
+    padding: 8px 12px;
+    margin: 20px 0 ;
+    background-color: #fcb500; /* Todo*/
+    color: #000000;
     border: none;
-    border-radius: 4px;
+    border-radius: 24px;
+    font-size: 24px;
     cursor: pointer;
 }
 
 #applicationForm button:hover {
-    background-color: #218838;
+    /* Todo */
+    background-color: #000000;
+    color: #fcb500;
+    margin: 20px auto;
+    padding: 4px 12px;
+    font-size: 24px;
+
 }
 
 .error {
@@ -937,7 +964,7 @@ body {
     bottom: -2px;
     width: 0;
     height: 2px;
-    background-color: #007bff;
+    background-color: #f02100;
     transition: width 0.3s ease;
 }
 
