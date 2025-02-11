@@ -3,39 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Popup Form</title>
-    <link rel="stylesheet" href="css/test.css"> <!-- Link to your CSS file -->
+    <title>About Us - Gurukulam Studies</title>
+    <link rel="stylesheet" href="css/test.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #0078D7;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #0078D7;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        .mission, .values, .services {
+            margin-bottom: 30px;
+        }
+        .values ul, .services ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        .values li, .services li {
+            margin-bottom: 10px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
-    <!-- Apply Button -->
-    <button id="applyButton">Apply</button>
 
-    <!-- Popup Form -->
-    <div id="popupForm" class="popup">
-        <div class="popup-content">
-            <span id="closeButton" class="close">&times;</span>
-            <h2>Apply Now</h2>
-            <form id="applicationForm">
-                <label for="firstName">First Name:</label>
-                <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
-                <span id="firstNameError" class="error"></span>
+    <header>
+        <h1>About Gurukulam Studies</h1>
+        <p>Your Gateway to Global Education</p>
+    </header>
 
-                <label for="lastName">Last Name:</label>
-                <input type="text" id="lastName" name="lastName" placeholder="Enter your last name">
+    <h1>Modern Gallery</h1>
+    <p>Explore stunning visuals with detailed descriptions.</p>
+  </header>
 
-                <label for="mobile">Mobile:</label>
-                <input type="text" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
-                <span id="mobileError" class="error"></span>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                <span id="emailError" class="error"></span>
-
-                <button type="submit">Submit</button>
-            </form>
-        </div>
+  <section class="gallery">
+    <!-- Gallery Item 1 -->
+    <div class="gallery-item">
+      <img src="images/gurukulamLogo.png" alt="Sunset">
+      <div class="overlay">
+        <h3>Sunset Over Mountains</h3>
+        <p>A beautiful sunset over the mountains.</p>
+        <button class="details-btn">View Details</button>
+      </div>
     </div>
 
-    <script src="js/test.js"></script> <!-- Link to your JavaScript file -->
+    <!-- Gallery Item 2 -->
+    <div class="gallery-item">
+      <img src="images/gurukulam-logo.jpg" alt="Lake">
+      <div class="overlay">
+        <h3>Serene Lake</h3>
+        <p>A serene lake surrounded by trees.</p>
+        <button class="details-btn">View Details</button>
+      </div>
+    </div>
+
+    <!-- Add more gallery items here -->
+  </section>
+
+  <!-- Lightbox Popup -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <div>
+        <img id="lightbox-img" class="lightbox-content">
+        <div class="lightbox-details">
+          <h2 id="lightbox-title"></h2>
+          <p id="lightbox-description"></p>
+        </div>
+    </div>
+  </div>
+
+    <footer>
+        <p>&copy; 2023 Gurukulam Studies. All rights reserved.</p>
+    </footer>
+    <script src="js/test.js"></script>
 </body>
 </html>
