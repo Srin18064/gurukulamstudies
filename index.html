@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> 
     <link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet"> 
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 <body>
     <div id="siteNavigation" class="siteNavigation">
         <div class="navigation">
@@ -19,7 +18,7 @@
 
                     <li><a href="index.html" class="animated-underline"> Home</a></li>
                     <li><a href="gallery.html" class="animated-underline">Gallery</a></li>
-                    <li><a href="blog.html" class="animated-underline">Blog</a></li>
+                    <li><a href="aboutus.html" class="animated-underline">About Us</a></li>
                     <li><a href="contactus.html" class="animated-underline">Contact Us</a></li>
                     <li><a href="privacypolicies.html" class="animated-underline">Privacy Policy</a></li>
                     <li><a href="terms&conditions.html" class="animated-underline">Terms & Conditions</a></li>
@@ -57,7 +56,7 @@
                         <div style="width: fit-content; margin: 0 auto;">
                             <div style="display: flex; align-items: center;">
                                 <div class="navLeft navSec">
-                                    <a href="./about.html"> About Us</a>
+                                    <a href="./aboutus.html"> About Us</a>
                                     <span style="width: 1px; height: 24px; margin: auto 1px; background-color: black;"></span>
                                     <a href="gallery.html">Gallery</a>
                                   
@@ -319,6 +318,23 @@
         </div>
     </div>
 
+    <div class="review-container">
+        <h2>Reviews</h2>
+        <div class="review-wrapper">
+            <div class="review-slide">
+                <p>"Gurukulam Studies made my dream of studying in Vietnam come true! The support was amazing." - Riya S.</p>
+            </div>
+            <div class="review-slide">
+                <p>"Thanks to Gurukulam Studies, I found the perfect university in Vietnam. Highly recommend!" - Arjun K.</p>
+            </div>
+            <div class="review-slide">
+                <p>"The guidance I received from Gurukulam Studies was invaluable. They made the process so easy." - Priya M.</p>
+            </div>
+        </div>
+        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+        <button class="next" onclick="plusSlides(1)">&#10095;</button>
+    </div>
+    
     <!-- Popup Form -->
     <div id="popupForm" class="popup1">
         <div class="popup-content1">
@@ -376,7 +392,7 @@
             <ul class="menuItems">
                 <li><a href="index.html" class="animated-underline">Home</a></li>
 
-              <li><a href="about.html" class="animated-underline">About Us</a></li>
+              <li><a href="aboutus.html" class="animated-underline">About Us</a></li>
               <li><a href="gallery.html" class="animated-underline">Services</a></li>
               <li><a href="review.html" class="animated-underline">Resources</a></li>
               <li><a href="contactus.html" class="animated-underline">Contact Us</a></li>
@@ -437,10 +453,33 @@
             </div>
         </div>
       </footer>
-      
+      <a href="https://wa.me/+91234567890" target="_blank" class="whatsapp-button">
+        <i class="fab fa-whatsapp"></i> <!-- WhatsApp Icon -->
+    </a>
 <!-- Javascript -->
 
       <script>
+        let slideIndex = 0;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("review-slide");
+    if (n >= slides.length) {
+        slideIndex = 0;
+    } 
+    if (n < 0) {
+        slideIndex = slides.length - 1;
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slides[slideIndex].style.display = "block";  
+}
 
       </script>
 

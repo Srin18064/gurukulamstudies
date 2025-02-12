@@ -99,7 +99,7 @@ h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
         z-index: 2;
         background-color: #f02100;
         border-radius: 35px;
-        border: 1px solid white;
+        border: 1px solid black;
         margin-left:9%;
         margin-right: 9%;
     }
@@ -146,6 +146,7 @@ h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
     margin-top: 0;
     display: flex;
     color: black;
+    border: #000000 1px solid;
     flex-wrap: nowrap;
     padding: 0px 8px;
     justify-content: space-evenly;
@@ -446,6 +447,7 @@ footer {
 .footerContenSec h3 {
     margin: 8px auto;
     padding-left: 40px;
+    text-align: left;
 }
 
 .footerContenSec p{
@@ -495,7 +497,8 @@ footer {
         font-size: 14px;
     }
     .menuItems li {
-        display: inline-block;
+        display: block;
+        text-align: left;
         gap: 12px;
         line-height: 1.5;
         margin: 0 4px;
@@ -787,7 +790,7 @@ label {
 }
 
 .contactInput::placeholder {
-    font: 18px sans-serif;
+    font: 16px sans-serif;
 }
 #submit {
     width: 50%;
@@ -940,7 +943,7 @@ body {
     left: -300px;
     width: 300px;
     height: 100%;
-    background-color: #fff;
+    background-color: #f3f5cc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: left 0.3s ease;
     z-index: 999;
@@ -1087,4 +1090,83 @@ body {
 .highlighter {
     color: #f02100;
     font-weight: 600;
+}
+
+.review-container {
+    position: relative;
+    max-width: 96vw;
+    padding: 12px;
+    margin: 12px auto;
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.review-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.review-slide {
+    min-width: 98%;
+    box-sizing: border-box;
+    padding: 20px;
+    background: transparent;
+    border-left: 1px solid #ddd;
+}
+
+.review-slide:first-child {
+    border-left: none;
+}
+
+button.prev, button.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    user-select: none;
+}
+
+button.prev {
+    left: 0;
+}
+
+button.next {
+    right: 0;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* WhatsApp Button Styling */
+.whatsapp-button {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    background-color: #25d366; /* WhatsApp green */
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+.whatsapp-button:hover {
+    background-color: #128c7e; /* Darker WhatsApp green */
+}
+.whatsapp-button i {
+    margin-top: 2px; /* Adjust icon alignment */
 }

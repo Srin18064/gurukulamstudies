@@ -6,7 +6,12 @@ header h1 {
 header p{
     padding: 24px;
 }
-
+@media (max-width : 850px) {
+    .container {
+        width: 94vw !important;
+        padding: 1rem;
+    }
+}
 .container {
     width: 80%;
     margin: 20px auto;
