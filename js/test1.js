@@ -1,25 +1,32 @@
-// script.js
+/* scripts.js */
 document.addEventListener('DOMContentLoaded', () => {
-    const galleryItems = document.querySelectorAll('.gallery-item');
-    const lightboxContainer = document.createElement('div');
-    const lightboxImage = document.createElement('img');
-    const lightboxDescription = document.createElement('div');
+    const thumbnails = document.querySelectorAll('.video-thumbnail');
+    const videoPlayer = document.getElementById('video-player');
+    const videoTitle = document.getElementById('video-title');
+    const videoDescription = document.getElementById('video-description');
 
-    lightboxContainer.classList.add('lightbox');
-    lightboxContainer.appendChild(lightboxImage);
-    lightboxContainer.appendChild(lightboxDescription);
-    document.body.appendChild(lightboxContainer);
+    thumbnails.forEach(thumbnail => {
+        thumbnail.addEventListener('click', () => {
+            const videoId = thumbnail.getAttribute('data-video-id');
+            const title = thumbnail.getAttribute('data-title');
+            const description = thumbnail.getAttribute('data-description');
 
-    galleryItems.forEach(item => {
-        item.addEventListener('click', () => {
-            lightboxImage.src = item.querySelector('img').src;
-            lightboxDescription.textContent = item.querySelector('.description').textContent;
-            lightboxContainer.classList.add('active');
+            videoPlayer.src = `https://www.youtube.com/embed/${videoId}`;
+            videoTitle.textContent = title;
+            videoDescription.textContent = description;
         });
     });
 
-    lightboxContainer.addEventListener('click', () => {
-        lightboxContainer.classList.remove('active');
+    // Swipe functionality
+    let startX;
+
+    document.querySelector('.video-list').addEventListener('touchstart', (e) => {
+        startX = e.touches[0].clientX;
+    });
+
+    document.querySelector('.video-list').addEventListener('touchmove', (e) => {
+        const moveX = e.touches[0].clientX - startX;
+        document.querySelector('.video-list').scrollLeft -= moveX;
+        startX = e.touches[0].clientX;
     });
 });
-

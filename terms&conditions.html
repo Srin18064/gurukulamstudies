@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gurukulam Studies</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pcty.css">
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> 
     <link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet"> 
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/about.css">
 </head>
 <body>
     <div id="siteNavigation" class="siteNavigation">
@@ -125,44 +125,58 @@
 
     </div>
 
-    <!-- content -->
     <header class="header">
-        <h1>About Gurukulam Studies</h1>
-        <p><span class="highlighter">Gurukulam Studies</span> is a trailblazing Indian organization committed to forming strategic partnerships with the Vietnamese government and top international universities. Our goal is to offer future medical students exceptional access to state-of-the-art facilities and education in Vietnam. We are dedicated to turning your aspirations into reality.</p>
+        <h1>Terms & Conditions</h1>
+        <div class="breadcrumb"> <a href="index.html">Home</a> >> <a href="terms&conditions.html">Terms & Conditions</a></div>
     </header>
-
+    
     <div class="container">
-        <section class="mission">
-            <h2>Our Mission</h2>
-            <p>At Gurukulam Studies, our mission is to empower students to achieve their academic and career aspirations by providing personalized guidance and support for studying abroad. We strive to make global education accessible, affordable, and achievable for every student.</p>
-        </section>
+        <h3>Introduction</h3>
+        <p>Welcome to Gurukulam Studies. These terms and conditions outline the rules and regulations for the use of our website and services. By accessing this website, we assume you accept these terms and conditions. Do not continue to use Gurukulam Studies if you do not agree to all the terms and conditions stated on this page.</p>
+        
+        <h3>Definitions</h3>
+        <p>        "Company", "We", "Our", and "Us" refer to Gurukulam Studies.
+        </p>        
+        <p>        "Client", "You", and "Your" refer to you, the person accessing this website and using our services.</p>        
+        
+        <h3>Services</h3>
 
-        <section class="values">
-            <h2>Our Core Values</h2>
-            <ul>
-                <li><strong>Integrity:</strong> We are committed to honesty and transparency in all our interactions.</li>
-                <li><strong>Excellence:</strong> We aim to deliver the highest quality services to our students.</li>
-                <li><strong>Empathy:</strong> We understand the challenges students face and provide compassionate support.</li>
-                <li><strong>Innovation:</strong> We continuously adapt to the evolving landscape of global education.</li>
-            </ul>
-        </section>
+        <p>        Gurukulam Studies offers educational consultancy services to assist students in applying to universities in Vietnam. Our services include, but are not limited to:
+        </p>
+        <ul>
+            <li>        Student counseling and guidance
+            </li>
+            <li>
+                University application assistance
 
-        <section class="services">
-            <h2>Our Services</h2>
-            <ul>
-                <li><strong>University Admissions:</strong> Assistance with applications, essays, and deadlines.</li>
-                <li><strong>Visa Guidance:</strong> Expert support for visa applications and documentation.</li>
-                <li><strong>Test Preparation:</strong> Resources and coaching for IELTS, TOEFL, GRE, GMAT, and more.</li>
-                <li><strong>Scholarship Assistance:</strong> Help in identifying and applying for scholarships.</li>
-                <li><strong>Pre-Departure Support:</strong> Orientation sessions and travel assistance.</li>
-            </ul>
-        </section>
-
-        <section class="team">
-            <h2>Our Team</h2>
-            <p>Our team consists of experienced education consultants, visa experts, and career counselors who are passionate about helping students succeed. With years of experience in the field, we understand the intricacies of international education and are dedicated to guiding you every step of the way.</p>
-        </section>
+            </li>
+            <li>        Visa support and documentation
+            </li>
+            <li>Scholarship and financial aid advice</li>
+            <li>Pre-departure orientation</li>
+        </ul>
+        
+        <h3>Use of Website</h3>
+        <p>By using our website, you agree to use it only for lawful purposes and in a way that does not infringe the rights of, restrict, or inhibit anyone else's use and enjoyment of the website. Prohibited behavior includes harassing or causing distress or inconvenience to any other user, transmitting obscene or offensive content, or disrupting the normal flow of dialogue within our website.</p>
+        
+        <h3>Intellectual Property</h3>
+        <p>Unless otherwise stated, Gurukulam Studies owns the intellectual property rights for all material on this website. All intellectual property rights are reserved. You may access this from Gurukulam Studies for your own personal use, subjected to restrictions set in these terms and conditions.</p>
+        
+        <h3>Limitations of Liability</h3>
+        <p>In no event shall Gurukulam Studies, nor any of its officers, directors, and employees, be held liable for anything arising out of or in any way connected with your use of this website or the services provided. Gurukulam Studies, including its officers, directors, and employees, shall not be held liable for any indirect, consequential, or special liability arising out of or in any way related to your use of this website.</p>
+        
+        <h3>Governing Law</h3>
+        <p>These terms and conditions are governed by and construed in accordance with the laws of India. You irrevocably submit to the exclusive jurisdiction of the courts in that location.</p>
+        
+        <h3>Privacy Policy</h3>
+        <p>Your privacy is important to us. Please review our [Privacy Policy](link to privacy policy) to understand our practices regarding the collection, use, and protection of your personal information.</p>
+        
+        <h3>Changes to Terms & Conditions</h3>
+        <p>Gurukulam Studies reserves the right to revise these terms and conditions at any time. By using this website, you are expected to review these terms and conditions regularly to ensure you understand all terms and conditions governing the use of this website.</p>
     </div>
+    
+
+
 
     <!-- Popup Form -->
     <div id="popupForm" class="popup1">
@@ -303,27 +317,6 @@
     });
 
     </script>
-<script>
-    function filterList() {
-        const filter = document.getElementById('filter').value;
-        const projects = document.getElementsByClassName('project');
 
-        for (let project of projects) {
-            if (filter === 'all') {
-                project.style.display = 'block';
-            } else {
-                if (project.classList.contains(filter)) {
-                    project.style.display = 'block';
-                } else {
-                    project.style.display = 'none';
-                }
-            }
-        }
-    }
-
-    window.onload = function() {
-        filterList(); // Default filter on page load
-    }
-</script>
 </body>
 </html>

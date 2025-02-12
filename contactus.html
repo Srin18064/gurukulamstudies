@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gurukulam Studies</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> 
     <link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet"> 
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
@@ -15,12 +16,14 @@
             <div id="sideMenu" class="side-menu">
                 <button id="sideCloseButton" class="close-btn">&times;</button>
                 <ul>
-                    <li><a href="#" class="animated-underline">Testimonials</a></li>
-                    <li><a href="#" class="animated-underline">Gallery & Events</a></li>
-                    <li><a href="#" class="animated-underline">Careers</a></li>
-                    <li><a href="#" class="animated-underline">Blog</a></li>
-                    <li><a href="#" class="animated-underline">Contact Us</a></li>
-                    <li><a href="#" class="animated-underline">Privacy Policy</a></li>
+                    <img src="images/glogo.png" style="width: 30%; margin: 8px auto;" alt="Gurukulam Studies">
+
+                    <li><a href="index.html" class="animated-underline"> Home</a></li>
+                    <li><a href="gallery.html" class="animated-underline">Gallery</a></li>
+                    <li><a href="blog.html" class="animated-underline">Blog</a></li>
+                    <li><a href="contactus.html" class="animated-underline">Contact Us</a></li>
+                    <li><a href="privacypolicies.html" class="animated-underline">Privacy Policy</a></li>
+                    <li><a href="terms&conditions.html" class="animated-underline">Terms & Conditions</a></li>
                 </ul>
             </div>
             <div class="mobileNavigation">
@@ -57,7 +60,7 @@
                                 <div class="navLeft navSec">
                                     <a href="./about.html"> About Us</a>
                                     <span style="width: 1px; height: 24px; margin: auto 1px; background-color: black;"></span>
-                                    <a href="services.html">Services</a>
+                                    <a href="gallery.html">Gallery</a>
                                   
                                 </div>
                                 <div class="navCenter navSec">
@@ -65,7 +68,7 @@
                                     </a>
                                 </div>
                                 <div class="navRight navSec navbar">
-                                    <a href="#resources" onclick="showPopup('Resources')">Resources</a>
+                                    <a href="#resources" onclick="showPopup('Resources')">Universities</a>
                                     
                                         <span style="width: 1px; height: 24px; margin: auto 1px; background-color: black;"></span>
                                         <a href="./contactus.html" onclick="showPopup('plots')">Contact us</a>
@@ -76,8 +79,15 @@
                                 
                                     <div id="resources" class="popup">
                                         <button class="close" onclick="closePopup('resources')">Close</button>
-                                        <h1>resources</h1>
-                                        <p>Welcome to the home page.</p>
+                                        <h1>Universities</h1>
+                                        <hr style="width: 80%; margin: auto; height: 1px; color: white;">
+                                        <div style="margin-top: 24px; ">
+                                            <a href="index.html#ctu" style="display: inline-block; padding: 8px; text-decoration: none; color: white; font-weight: 600; font-size: 1.5rem;">Can Tho University</a>
+                                            <a href="index.html#pctu" style="display: inline-block; padding: 8px; text-decoration: none; color: white; font-weight: 600; font-size: 1.5rem;">Phan Chau Trinh University</a>
+                                            <a href="index.html#dnu" style="display: inline-block; padding: 8px; text-decoration: none; color: white; font-weight: 600; font-size: 1.5rem;">Dam Nam University</a>
+
+                                        </div>
+                                        
                                     </div>
                                     <div id="villas" class="popup">
                                         <button class="close" onclick="closePopup('services')">Close</button>
@@ -115,7 +125,123 @@
 
     </div>
 
+    <header class="header">
+        <h1>Contact Us</h1>
+        <div class="breadcrumb"> <a href="index.html">Home</a> >> <a href="contactus.html">Contact Us</a></div>
+    </header>
     
+    <div class="container">
+    
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <h2 style="text-align: center;">Get in Touch</h2>
+            <p>We’d love to hear from you! Whether you have questions about our services, need assistance with university applications, or just want to learn more, feel free to reach out.</p>
+            <p><strong>Email:</strong> <a href="mailto:info@gurukulamstudies.com">info@gurukulamstudies.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+84123456789">+84 123 456 789</a></p>
+            <p><strong>Address:</strong> 52, Eawaran Koil Street, Ramapuram, Ilandaikulam, Alandur, Chennai, Tamilnadu - 600016</p>
+        </div>
+    
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h2 style="text-align: center;">Send Us a Message</h2>
+            <form action="#" method="post" id="myForm">
+                <input type="text" name="name" placeholder="Your Name" class="contactInput" required>
+                <input type="email" name="email" placeholder="Your Email" class="contactInput" required>
+                <input type="tel" name="phone" placeholder="Phone" class="contactInput" required>
+                <textarea name="message" placeholder="Your Message" class="contactInput" required></textarea>
+                <button type="submit" id="submit" style="width: fit-content;">Send Message</button>
+            </form>
+        </div>
+    
+        <!-- Google Maps Embed -->
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.096484299813!2d105.843726315402!3d21.02876679315338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9a7b5b3b1f%3A0x1c7c8f4a4b5b3b1f!2sHanoi%20University%20of%20Science%20and%20Technology!5e0!3m2!1sen!2s!4v1629999999999!5m2!1sen!2s"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+    
+
+    <!-- FAQ -->
+    <div class="faq-container">
+        <h1>Frequently Asked Questions</h1>
+    
+        <!-- FAQ Item 1 -->
+        <div class="faq-item">
+            <div class="faq-question">What services does Gurukulam Studies offer?</div>
+            <div class="faq-answer">
+                Gurukulam Studies provides comprehensive educational consultancy services, including university selection, application assistance, visa guidance, and pre-departure support for students aiming to study in Vietnam.
+            </div>
+        </div>
+    
+        <!-- FAQ Item 2 -->
+        <div class="faq-item">
+            <div class="faq-question">Which universities in Vietnam do you work with?</div>
+            <div class="faq-answer">
+                We partner with top universities in Vietnam, including Vietnam National University, Hanoi University of Science and Technology, and RMIT University Vietnam, among others.
+            </div>
+        </div>
+    
+        <!-- FAQ Item 3 -->
+        <div class="faq-item">
+            <div class="faq-question">How do I apply for a university in Vietnam?</div>
+            <div class="faq-answer">
+                Our team will guide you through the entire application process, from selecting the right program to submitting your application and required documents.
+            </div>
+        </div>
+    
+        <!-- FAQ Item 4 -->
+        <div class="faq-item">
+            <div class="faq-question">Do I need a visa to study in Vietnam?</div>
+            <div class="faq-answer">
+                Yes, international students require a student visa to study in Vietnam. We provide assistance with the visa application process to ensure a smooth experience.
+            </div>
+        </div>
+    
+        <!-- FAQ Item 5 -->
+        <div class="faq-item">
+            <div class="faq-question">What are the language requirements for studying in Vietnam?</div>
+            <div class="faq-answer">
+                Most programs are offered in English, so proficiency in English is required. Some universities may ask for IELTS or TOEFL scores. For Vietnamese-taught programs, you may need to demonstrate Vietnamese language proficiency.
+            </div>
+        </div>
+    
+        <!-- FAQ Item 6 -->
+        <div class="faq-item">
+            <div class="faq-question">Can I work while studying in Vietnam?</div>
+            <div class="faq-answer">
+                Yes, international students are allowed to work part-time while studying in Vietnam, subject to certain restrictions. We can provide more details based on your specific situation.
+            </div>
+        </div>
+    
+        <!-- FAQ Item 7 -->
+        <div class="faq-item">
+            <div class="faq-question">What is the cost of studying in Vietnam?</div>
+            <div class="faq-answer">
+                The cost varies depending on the university and program. On average, tuition fees range from $2,000 to $10,000 per year. We can help you find a program that fits your budget.
+            </div>
+        </div>
+    
+        <!-- FAQ Item 8 -->
+        <div class="faq-item">
+            <div class="faq-question">How can I contact Gurukulam Studies for more information?</div>
+            <div class="faq-answer">
+                You can reach us via email at info@gurukulamstudies.com or call us at +84 123 456 789. Our office is located in Hanoi, Vietnam, and we also offer online consultations.
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // JavaScript to handle the collapsible functionality
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const parent = item.parentElement;
+                parent.classList.toggle('active');
+            });
+        });
+    </script>
 
     <!-- Popup Form -->
     <div id="popupForm" class="popup1">
@@ -144,38 +270,16 @@
     </div>
 
     <footer style="background:linear-gradient(180deg, #f9edb433, #fcb200); color: black;">
-        <h3 style="text-align: center;">Get in Touch with Our Educational Experts!</h3>
-        <div class="enquiryForm">
-            <div style="padding: 4px; padding-top: 20px; border-radius: 12px;">
-                <div class="video-container">
-                    <iframe 
-                        src="https://www.youtube.com/embed/y_XaJ_jOBV0?si=aMGw5jIX60RbJ6yd?controls=1" 
-                        frameborder="0" 
-                        allowfullscreen>
-                    </iframe>
-                </div>
-            </div>
-            <div style="margin: auto;">
-                
-                <form action="" id="myForm">
-                    <p>"Have questions about studying abroad, admissions, or career guidance? Fill out the form below, and our team will get back to you shortly."</p>
-                    <input type="text" id="firstName" class="contactInput" name="firstName" placeholder="First Name" required pattern="[A-Za-z]+" title="First name should only contain letters">
-                    <input type="text" id="lastName" class="contactInput" name="lastName" placeholder="Last Name">
-                    <input type="tel" name="phone" class="contactInput" id="phone" placeholder="Phone" required pattern="[0-9]{10}" title="Phone number should be 10 digits.">
-                    <input type="email" name="email" class="contactInput" placeholder="E-mail" id="email" required>
-                    <br>
-                    <button type="submit" id="submit">Submit</button>
-                </form> 
-            </div>
-         </div>
+
         <div class="footerGrid" style="padding: 20px;">
           <div class="footerContenSec" id="footerContenSec0">
             <h3 style="margin-left: auto; margin-right: auto;">Quick Links</h3>
             <ul class="menuItems">
-              <li><a href="" class="animated-underline">About Us</a></li>
-              <li><a href="" class="animated-underline">Services</a></li>
-              <li><a href="" class="animated-underline">Resources</a></li>
-              <li><a href="" class="animated-underline">Contact Us</a></li>
+                <li><a href="index.html" class="animated-underline">Home</a></li>
+              <li><a href="about.html" class="animated-underline">About Us</a></li>
+              <li><a href="gallery.html" class="animated-underline">Services</a></li>
+              <li><a href="review.html" class="animated-underline">Resources</a></li>
+              <li><a href="contactus.html" class="animated-underline">Contact Us</a></li>
             </ul>
           </div>
 
@@ -183,9 +287,9 @@
           <div class="footerContenSec" id="footerContentSec1">
             <h3>Our Partners</h3>
             <ul class="menuItems">
-              <li><a href="#ctu" class="animated-underline">Can Tho University</a></li>
-              <li><a href="#pctu" class="animated-underline">Phan Chau Trinh University</a></li>
-              <li><a href="#dnu" class="animated-underline">Dam Nam University</a></li>
+              <li><a href="index.html#ctu" class="animated-underline">Can Tho University</a></li>
+              <li><a href="index.html#pctu" class="animated-underline">Phan Chau Trinh University</a></li>
+              <li><a href="index.html#dnu" class="animated-underline">Dam Nam University</a></li>
             </ul>
           </div>
           <hr style="height: 1px; width: 80vw; margin-left: auto; margin-right: auto;">
