@@ -91,7 +91,7 @@ h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
     .mobileNavigation {
         display: block;
         position: fixed;
-        bottom: 5px;
+        bottom: 20px;
         /* padding: 0 16px; */
         width: 80%;
         height: 70px;
@@ -943,11 +943,15 @@ body {
     left: -300px;
     width: 300px;
     height: 100%;
-    background-color: #f3f5cc;
+    background-color: #fcb500;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: left 0.3s ease;
     z-index: 999;
 }
+
+.imgSidemenu img {
+    display: block;
+    }
 
 .side-menu ul {
     list-style: none;

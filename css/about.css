@@ -9,7 +9,7 @@ header p{
 @media (max-width : 850px) {
     .container {
         width: 94vw !important;
-        padding: 1rem;
+        padding: 1rem !important;
     }
 }
 .container {

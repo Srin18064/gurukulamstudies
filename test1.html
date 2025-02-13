@@ -3,26 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube Video Player List with Details and Swipe</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Image Masking</title>
+    <style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.image-container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+.image1, .image2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image2 {
+    mask-image: url('images/gkbg.png'); /* The mask image */
+    -webkit-mask-image: url('images/glogo.png'); /* For better browser compatibility */
+    mask-size: cover;
+    -webkit-mask-size: cover;
+}
+
+    </style>
 </head>
 <body>
-    <div class="video-container">
-        <iframe id="video-player" width="560" height="315" src="https://www.youtube.com/embed/example1" frameborder="0" allowfullscreen></iframe>
+    <div class="image-container">
+        <img src="images/glogo.png" alt="Image 1" class="image1">
+        <img src="images/gurukulam-logo.jpg" alt="Image 2" class="image2">
     </div>
-    <div class="video-details">
-        <h3 id="video-title">Video Title 1</h3>
-        <p id="video-description">Description of Video 1...</p>
-    </div>
-    <div class="video-list">
-        <div class="video-thumbnail" data-video-id="example1" data-title="Video Title 1" data-description="Description of Video 1...">
-            <img src="thumbnail1.jpg" alt="Video 1">
-        </div>
-        <div class="video-thumbnail" data-video-id="example2" data-title="Video Title 2" data-description="Description of Video 2...">
-            <img src="thumbnail2.jpg" alt="Video 2">
-        </div>
-        <!-- Add more video thumbnails as needed -->
-    </div>
-    <script src="scripts.js"></script>
 </body>
 </html>
