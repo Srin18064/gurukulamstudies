@@ -84,7 +84,13 @@ h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
         display: block;
         text-align: start;
     }
-
+    .footerHeadWide {
+        display: none;
+    }
+    .footerHeadMob {
+        display: block;
+        margin-top: 20px;
+    }
     .footerGrid {
         display: grid !important;
     }
@@ -116,6 +122,13 @@ h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
         font-weight: 400px;
     }
     .topLogo {
+        display: none;
+    }
+
+    .footerHeadWide {
+        display: block;
+    }
+    .footerHeadMob {
         display: none;
     }
     .wideNavigation {
@@ -1194,4 +1207,8 @@ button.prev:hover, button.next:hover {
     color: #fff;
     border: 1px solid #f02100;
 
+}
+
+.project img {
+    aspect-ratio: 16 / 9;
 }
