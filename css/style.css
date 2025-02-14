@@ -25,7 +25,7 @@ body, td{
 #siteNavigation .current { background-color: #ccd; }
 
 /* #siteNavigation a:hover   { text-decoration: none;  background-color: #fff;  color: #000; } */
-#siteNavigation a:active  { text-decoration: none;  background-color: #ccc; }
+#siteNavigation a:active  { text-decoration: none;  background-color: #fcb500; }
 
 
 
@@ -52,7 +52,10 @@ hr { height: 1px;  color: #ffffff;  background-color: aliceblue;  margin-bottom:
 h1 { margin: 0;  font-weight: bold;  font-size: 2em; }
 h2 { margin: 0;  font-weight: bold;  font-size: 1.6em; }
 h3 { margin: 0;  font-weight: bold;  font-size: 1.3em; }
-h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
+/* h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; } */
+h4 {
+    margin: 0;
+}
 
 .blak { background-color: #000; }
 .hide { display: none; }
@@ -175,7 +178,8 @@ h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
 }
 
 .wideNavigation {
-    background-color: #fff;
+    background-color: #f3f5cc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     height: 70px;
     margin: auto;
     color: #000 !important;
@@ -190,7 +194,7 @@ h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
 }
 
 .wideNavigation a:hover {
-    background-color: aliceblue;
+    background-color: #fcb500;
     border-radius: 24px;
 }
 
@@ -247,7 +251,7 @@ h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
     text-decoration: none;
 }
 .navbar a:hover, .navbar a.active {
-    background-color: #ddd;
+    background-color: #fcb500;
     color: black;
 }
 .content {
@@ -606,34 +610,6 @@ footer {
     border: 0;
 }
 
-/*  form */
-
-/* From Uiverse.io by satyamchaudharydev */ 
-/* .form {
-    --width-of-input: 200px;
-    --border-height: 1px;
-    --border-before-color: rgba(221, 221, 221, 0.39);
-    --border-after-color: #5891ff;
-    --input-hovered-color: #fcb100;
-    position: relative;
-    background-color: #003366;
-    width: var(--width-of-input);
-    border: 1px red solid;
-    padding: 16px;
-    margin: 8px;
-   } */
-   /* styling of Input */
-   /* .input {
-    color: #fff;
-    font-size: 0.9rem;
-    background-color: transparent;
-    width: 100%;
-    box-sizing: border-box;
-    padding-inline: 0.5em;
-    padding-block: 0.7em;
-    border: none;
-    border-bottom: var(--border-height) solid var(--border-before-color);
-   } */
    /* styling of animated border */
    .input-border {
     position: absolute;
@@ -656,11 +632,6 @@ footer {
    input:focus ~ .input-border {
     width: 100%;
    }
-   /* === if you want to do animated border on typing === */
-   /* remove input:focus code and uncomment below code */
-   /* input:valid ~ .input-border{
-     width: 100%;
-   } */
 
    /* Popup Overlay */
 .popup-overlay {
@@ -700,14 +671,7 @@ footer {
     border: none;
 }
 
-/* form {
-    width: 300px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-} */
+
 .myForm div {
     margin-bottom: 10px;
 }
@@ -715,10 +679,7 @@ label {
     display: inline-block;
     width: 100px;
 }
-/* input[type="text"], input[type="tel"], input[type="email"] {
-    width: calc(100% - 110px);
-    padding: 5px;
-} */
+
 .applyButton {
     width: fit-content;
     padding: 4px 16px;
@@ -929,7 +890,7 @@ body {
 #menuButton {
     font-size: 24px;
     padding: 6px 20px;
-    background-color: #007bff;
+    background-color: #f02100;
     color: white;
     border: none;
     cursor: pointer;
@@ -939,7 +900,8 @@ body {
 }
 
 #menuButton:hover {
-    background-color: #0056b3;
+    background-color: #fcb500;
+    color: #000000;
 }
 
 .mobNavView button {
@@ -1204,11 +1166,17 @@ button.prev:hover, button.next:hover {
     font-size: 24px;
     text-decoration: none;
     background-color: #f3f5cc;
-    color: #fff;
-    border: 1px solid #f02100;
-
+    color: #000000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-weight: 400px;
 }
 
 .project img {
     aspect-ratio: 16 / 9;
+}
+
+#resources,
+#resources a {
+    color: #f02100 !important;
+    margin: 4px 12px;
 }

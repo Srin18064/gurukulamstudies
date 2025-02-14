@@ -43,7 +43,7 @@
 }
 h1 {
     text-align: center;
-    color: #004aad;
+    color: #f02100;
     margin-bottom: 20px;
 }
 .contact-info, .contact-form {
@@ -54,14 +54,14 @@ h1 {
     margin-bottom: 20px;
 }
 .contact-info h2, .contact-form h2 {
-    color: #004aad;
+    color: #f02100;
     margin-bottom: 15px;
 }
 .contact-info p {
     margin: 10px 0;
 }
 .contact-info a {
-    color: #004aad;
+    color: #f02100;
     text-decoration: none;
 }
 .contact-info a:hover {
@@ -73,7 +73,7 @@ h1 {
     height: 150px;
 }
 .contact-form button {
-    background-color: #004aad;
+    background-color: #f02100;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -107,21 +107,7 @@ iframe {
     align-content: center;
     margin: 16px auto;
 }
-.supportSec a {
-    display: block;
-    /* width: 100%; */
-    margin: 12px 8px;
-    height: 50px;
-    text-align: center;
-    align-content: center;
-    border-radius: 24px;
-    font-size: 24px;
-    text-decoration: none;
-    background-color: #25d366;
-    color: #fff;
-    border: 1px solid #f02100;
 
-}
 
 .helpButton:hover {
     padding: auto;
