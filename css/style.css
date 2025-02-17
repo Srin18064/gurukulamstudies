@@ -25,7 +25,7 @@ body, td{
 #siteNavigation .current { background-color: #ccd; }
 
 /* #siteNavigation a:hover   { text-decoration: none;  background-color: #fff;  color: #000; } */
-#siteNavigation a:active  { text-decoration: none;  background-color: #fcb500; }
+#siteNavigation a:active  { text-decoration: none;  background-color: #ffed29; }
 
 
 
@@ -106,7 +106,7 @@ h4 {
         height: 70px;
         text-align: center;
         z-index: 2;
-        background-color: #f02100;
+        background-color: #fe0000;
         border-radius: 35px;
         border: 1px solid #00000080;
         margin-left: 1%;
@@ -198,7 +198,7 @@ h4 {
 }
 
 .wideNavigation a:hover {
-    background-color: #fcb500;
+    background-color: #ffed29;
     border-radius: 24px;
 }
 
@@ -255,7 +255,7 @@ h4 {
     text-decoration: none;
 }
 .navbar a:hover, .navbar a.active {
-    background-color: #fcb500;
+    background-color: #ffed29;
     color: black;
 }
 .content {
@@ -331,7 +331,7 @@ svg {
     color: #666;
 }
 .main {
-    background-color: #fcb500;
+    background-color: #ffed29;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -343,7 +343,7 @@ svg {
     margin: 0;
 }
 .ongoing-button {
-    background-color: #f02100;
+    background-color: #fe0000;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -372,7 +372,7 @@ svg {
     flex-wrap: wrap;
 }
 .project {
-    background-color: #f02100;
+    background-color: #fe0000;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     overflow: hidden;
@@ -393,7 +393,7 @@ svg {
     color: black;
 }
 .features div {
-    background-color: #fcb500;
+    background-color: #ffed29;
     border-radius: 16px;
     margin: 12px 0;
     padding: 8px;
@@ -449,7 +449,7 @@ svg {
     margin: 4px;
   padding: 8px;
   border-radius: 16px;
-  /* background-color: #fcb500; */
+  /* background-color: #ffed29; */
   border: none;
 }
 
@@ -671,7 +671,7 @@ footer {
     top: 10px;
     right: 10px;
     font-size: 20px;
-    background-color: #fcb500;
+    background-color: #ffed29;
     cursor: pointer;
     border-radius: 12px;
     /* background: transparent; */
@@ -701,7 +701,7 @@ label {
     cursor: pointer;
 }
 .applyButton:hover {
-    background-color: #fcb500;
+    background-color: #ffed29;
     color: #000;
     scale: 0.9;
     animation: flip 500ms 200ms 1 linear;
@@ -765,8 +765,8 @@ label {
     border-radius: 25px;
     padding-left: 4%;
     padding-right: 4%;
-    background-color: #fcb500;
-    border: 1px solid #f02100;
+    background-color: #ffed29;
+    border: 1px solid #fe0000;
     box-shadow: 0, 0, 8px rgba(221, 221, 221, 0.39);
 }
 
@@ -782,8 +782,8 @@ label {
     padding-right: 25px;
     margin-top: 8px;
     color: white;
-    background-color: #f02100;
-    border: 1px solid #fcb500;
+    background-color: #fe0000;
+    border: 1px solid #ffed29;
 }
 
 html {
@@ -807,7 +807,7 @@ html {
 }
 
 .popup-content1 {
-    background-color: #f02100;
+    background-color: #fe0000;
     padding: 20px;
     border-radius: 8px;
     min-width: 300px;
@@ -863,7 +863,7 @@ html {
     max-width: 200px;
     padding: 8px 12px;
     margin: 20px 0 ;
-    background-color: #fcb500; /* Todo*/
+    background-color: #ffed29; /* Todo*/
     color: #000000;
     border: none;
     border-radius: 24px;
@@ -874,7 +874,7 @@ html {
 #applicationForm button:hover {
     /* Todo */
     background-color: #000000;
-    color: #fcb500;
+    color: #ffed29;
     margin: 20px auto;
     padding: 4px 12px;
     font-size: 24px;
@@ -897,7 +897,7 @@ body {
 #menuButton {
     font-size: 24px;
     padding: 6px 20px;
-    background-color: #f02100;
+    background-color: #fe0000;
     color: white;
     border: none;
     cursor: pointer;
@@ -907,7 +907,7 @@ body {
 }
 
 #menuButton:hover {
-    background-color: #fcb500;
+    background-color: #ffed29;
     color: #000000;
 }
 
@@ -925,7 +925,7 @@ body {
     left: -300px;
     width: 300px;
     height: 100%;
-    background-color: #fcb500;
+    background-color: #ffed29;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: left 0.3s ease;
     z-index: 999;
@@ -976,7 +976,7 @@ body {
     bottom: -2px;
     width: 0;
     height: 2px;
-    background-color: #f02100;
+    background-color: #fe0000;
     transition: width 0.3s ease;
 }
 
@@ -1074,7 +1074,7 @@ body {
 	color: grey;
 }
 .highlighter {
-    color: #f02100;
+    color: #fe0000;
     font-weight: 600;
 }
 
@@ -1184,6 +1184,6 @@ button.prev:hover, button.next:hover {
 
 #resources,
 #resources a {
-    color: #f02100 !important;
+    color: #fe0000 !important;
     margin: 4px 12px;
 }
