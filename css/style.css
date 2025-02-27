@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     margin-top: e30009;
-    background-color: #fbd10133;
+    background-color: #ffed29;
 }
 
 body, td{
@@ -338,6 +338,7 @@ svg {
     width: 90vw;
     margin: auto;
     border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 .main h2 {
     margin: 0;
@@ -369,6 +370,8 @@ svg {
     display: flex;
     justify-content: space-around;
     padding: 20px;
+    gap: 16px;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 .project {
@@ -376,9 +379,14 @@ svg {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     overflow: hidden;
-    width: 30%;
+    width: 92vw;
     text-align: center;
-    margin-bottom: 20px;
+    margin: 10px auto;
+}
+.universitySec{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
 }
 .project h2 {
     color: white;
@@ -395,8 +403,8 @@ svg {
 .features div {
     background-color: #ffed29;
     border-radius: 16px;
-    margin: 12px 0;
-    padding: 8px;
+    margin: 4px 0;
+    padding: 4px 8px;
 }
 .universityTitle {
     line-height: 1.5;
@@ -413,9 +421,6 @@ svg {
     color: black;
     
 }
-.features div {
-    margin: 6px 0;
-}
 
 @media (max-width : 600px) {
     .project{
@@ -424,16 +429,28 @@ svg {
     .projects {
         padding-left: 8px;
         padding-right: 8px;
+        flex-direction: row;
+    }
+    .universitySec{
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
     }
 }
 
 @media (min-width : 600px) and (max-width: 1100px) {
     .project {
-        width: 48%;
+        width: 100%;
     }
     .projects {
+        flex-direction: column;
         padding-left: 12px;
         padding-right: 12px;
+    }
+    .universitySec{
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
     }
 }
 .project img {
@@ -441,7 +458,7 @@ svg {
     height: auto;
 }
 .project h3 {
-    margin: 10px 0;
+    margin: 4px 0;
     
 }
 
@@ -520,6 +537,18 @@ footer {
     .footerGrid {
         font-size: 14px;
     }
+    .model-list {
+        flex-direction: column !important;
+    }
+    .model-list-reverse {
+        flex-direction: column !important;
+    }
+    .model-image2{
+        width: 80vw !important;
+    }
+    .model-image1 {
+        width: 80vw !important;
+    }
     .menuItems li {
         display: block;
         text-align: left;
@@ -527,12 +556,16 @@ footer {
         line-height: 1.5;
         margin: 0 4px;
     }
+    .eligiblity-List{
+        flex-direction: column;
+    }
 }
 
 @media  (min-width : 850px) {
     .footerGrid hr {
         display: none !important;
     }
+
 }
 
 *{
@@ -734,6 +767,14 @@ label {
         width: 95vw;
     }
 
+}
+
+.fees h2 {
+    padding: 8px;
+  margin: 4px auto;
+  width: fit-content;
+  border-radius: 16px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
 }
 
 @media (min-width : 1100px) {
@@ -1186,4 +1227,82 @@ button.prev:hover, button.next:hover {
 #resources a {
     color: #fe0000 !important;
     margin: 4px 12px;
+}
+
+.elegiblity-container {
+    margin: 8px;
+    padding: 8px;
+    border-radius: 16px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    display: flex;
+    background-color: #fff04a;
+    gap: 12px;
+    flex-direction: column;
+    text-align: center;
+}
+.elegiblity-container h3 {
+    color: red;
+    margin: 8px auto;
+}
+
+.elegiblity-container .head {
+    padding: 8px;
+    margin: 4px auto;
+    /* width: fit-content; */
+    border-radius: 16px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+.features li {
+    margin: 8px 4px;
+}
+.eligiblity-List {
+    display: flex;
+    align-items: center;
+    margin: 4px auto;
+    padding: 4px;
+    gap: 20px;
+}
+.model-image1 {
+    width: 45vw;
+    border-radius: 16px;
+}
+.model-image2{
+    width: 80%;
+    border-radius: 16px;
+}
+.model-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    margin: 4px auto;
+    padding: 8px;
+    gap: 20px;
+}
+.model-list-reverse {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 80%;
+    margin: 4px auto;
+    padding: 8px;
+    gap: 20px;
+}
+.model-list h3,
+.model-list-reverse h3 {
+    font-size: 1.6em;
+}
+.model-list p,
+.model-list-reverse p {
+    font-size: 1.3em;
+}
+li::marker {
+    width: 32px;
+    height: 32px;
+}
+.video-port {
+    padding: 4px;
+    border-radius: 12px;
+    width: 80vw;
+    margin: auto;
 }
