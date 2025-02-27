@@ -46,3 +46,50 @@ p {
         width: 45vw;
     }
 }
+.impact-section {
+    
+    padding: 16px auto;
+    margin-bottom: 16px;
+}
+.impact-section h2 {
+    color: #fe0000;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+.impact-section p {
+    color: #000;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+.highlight {
+    color: #000000;
+}
+.impact-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.impact-card {
+    background-color: #ffed29;
+    border: 2px solid #fe0000;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.impact-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.impact-card h3 {
+    color: #000;
+    font-size: 1.5em;
+    margin: 0;
+}
+.impact-card p {
+    color: #000;
+    font-size: 1em;
+    margin: 0;
+}

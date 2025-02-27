@@ -1,3 +1,26 @@
+// Load the IFrame Player API code asynchronously.
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+var players = [];
+
+function onYouTubeIframeAPIReady() {
+    const videos = document.querySelectorAll('iframe');
+    videos.forEach((video, index) => {
+        players[index] = new YT.Player(video.id, {
+            events: {
+                'onReady': onPlayerReady
+            }
+        });
+    });
+}
+
+function onPlayerReady(event) {
+    event.target.setVolume(50); // Set volume to 50%
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     const applyButton = document.getElementById("applyButton");
     const applyButton1 = document.getElementById("applyButton1");
@@ -15,6 +38,33 @@ document.addEventListener("DOMContentLoaded", function () {
     const sideMenu = document.getElementById("sideMenu");
     const mobileMenuButton = document.getElementById("menuButton1");
     const sideCloseButton = document.getElementById("sideCloseButton");
+
+    const videos = document.querySelectorAll('iframe');
+
+    const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5
+    };
+
+    const callback = (entries, observer) => {
+        entries.forEach(entry => {
+            const iframe = entry.target;
+            const player = players[Array.from(videos).indexOf(iframe)];
+
+            if (entry.isIntersecting) {
+                player.playVideo();
+            } else {
+                player.pauseVideo();
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver(callback, options);
+
+    videos.forEach(video => {
+        observer.observe(video);
+    });
 
     function showPopup(id) {
         var popups = document.getElementsByClassName('popup');
@@ -34,19 +84,16 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-         // Add event listener to close popup when clicking outside
-         document.addEventListener('click', function(event) {
+    // Add event listener to close popup when clicking outside
+    document.addEventListener('click', function(event) {
         var popups = document.getElementsByClassName('popup');
         for (var i = 0; i < popups.length; i++) {
             var popup = popups[i];
             if (popup.classList.contains('active') && !popup.contains(event.target) && !event.target.closest('.navbar')) {
                 popup.classList.remove('active');
-
-                
             }
         }
     });
-    
 
     // Show popup when Apply button is clicked
     if (applyButton) {
@@ -164,5 +211,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
-    
+
+    // Show the popup form automatically when the page is loaded
+    popupForm.style.display = "flex";
 });
