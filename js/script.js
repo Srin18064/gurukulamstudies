@@ -28,16 +28,17 @@ document.addEventListener("DOMContentLoaded", function () {
     const popupForm = document.getElementById("popupForm");
     const closeButton = document.getElementById("closeButton1");
     const applicationForm = document.getElementById("applicationForm");
-    const firstNameInput = document.getElementById("firstName");
+    const fullNameInput = document.getElementById("fullName");
     const mobileInput = document.getElementById("mobile");
     const emailInput = document.getElementById("email");
-    const firstNameError = document.getElementById("firstNameError");
+    const fullNameError = document.getElementById("fullNameError");
     const mobileError = document.getElementById("mobileError");
     const emailError = document.getElementById("emailError");
     const menuButton = document.getElementById("menuButton");
     const sideMenu = document.getElementById("sideMenu");
     const mobileMenuButton = document.getElementById("menuButton1");
     const sideCloseButton = document.getElementById("sideCloseButton");
+    const collageDetails = document.getElementById("collageDetails")
 
     const videos = document.querySelectorAll('iframe');
 
@@ -99,18 +100,21 @@ document.addEventListener("DOMContentLoaded", function () {
     if (applyButton) {
         applyButton.addEventListener("click", function () {
             popupForm.style.display = "flex";
+            collageDetails.value = "CTU";
         });
     }
 
     if (applyButton1) {
         applyButton1.addEventListener("click", function () {
             popupForm.style.display = "flex";
+            collageDetails.value = "PCTU";
         });
     }
 
     if (applyButton2) {
         applyButton2.addEventListener("click", function () {
             popupForm.style.display = "flex";
+            collageDetails.value = "DNU";
         });
     }
 
@@ -171,14 +175,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
             let isValid = true;
 
-            // Validate First Name
-            if (firstNameInput.value.trim() === "") {
-                firstNameError.textContent = "Insert a valid name";
-                firstNameError.style.display = "block";
-                firstNameInput.focus();
+            // Validate Full Name
+            if (fullNameInput.value.trim() === "") {
+                fullNameError.textContent = "Insert a valid name";
+                fullNameError.style.display = "block";
+                fullNameInput.focus();
                 isValid = false;
             } else {
-                firstNameError.style.display = "none";
+                fullNameError.style.display = "none";
             }
 
             // Validate Mobile (10 digits)
@@ -214,4 +218,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Show the popup form automatically when the page is loaded
     popupForm.style.display = "flex";
+    collageDetails.value = "Enquiry"
 });

@@ -445,7 +445,7 @@
     </div>
 
     <div class="review-container">
-        <h2>Reviews</h2>
+        <h2>Testimonials</h2>
         <div class="review-wrapper">
             <div class="review-slide">
                 <iframe 
@@ -481,13 +481,13 @@
         <div class="popup-content1">
             <span id="closeButton1" class="close1">&times;</span>
             <h2 style="text-align: center;">Apply Now</h2>
+            <p>"Have questions about studying abroad, admissions, or career guidance? Fill out the form below, and our team will get back to you shortly."</p>
             <form id="applicationForm">
-                <label for="firstName">First Name: <span>*</span></label>
-                <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
-                <span id="firstNameError" class="error"></span>
+                <label for="fullName"> Full Name: <span>*</span></label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your Full Name" required>
+                <span id="fullNameError" class="error"></span>
 
-                <label for="lastName">Last Name:</label>
-                <input type="text" id="lastName" name="lastName" placeholder="Enter your last name">
+                <input type="hidden" name="collage name" value="" id="collageDetails">
 
                 <label for="mobile">Mobile: <span>*</span></label>
                 <input type="text" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
@@ -502,7 +502,7 @@
         </div>
     </div>
 
-    <footer style="background:linear-gradient(180deg, #f9edb433, #fcb200); color: black;">
+    <footer style="color: black;">
         <h3 class="footerHeadWide" style="text-align: center;">Get in Touch with Our Educational Experts!</h3>
         <div class="enquiryForm">
             <div style="padding: 4px; padding-top: 20px; border-radius: 12px;">
@@ -520,9 +520,8 @@
 
                 <form action="" id="myForm">
                     <p>"Have questions about studying abroad, admissions, or career guidance? Fill out the form below, and our team will get back to you shortly."</p>
-                    <input type="text" id="firstName" class="contactInput" name="firstName" placeholder="First Name" required pattern="[A-Za-z]+" title="First name should only contain letters">
-                    <input type="text" id="lastName" class="contactInput" name="lastName" placeholder="Last Name">
-                    <input type="tel" name="phone" class="contactInput" id="phone" placeholder="Phone" required pattern="[0-9]{10}" title="Phone number should be 10 digits.">
+                    <input type="text" id="fullName" class="contactInput" name="fullName" placeholder="Full Name" required pattern="[A-Za-z]+" title="Full Name should only contain letters">
+                     <input type="tel" name="phone" class="contactInput" id="phone" placeholder="Phone" required pattern="[0-9]{10}" title="Phone number should be 10 digits.">
                     <input type="email" name="email" class="contactInput" placeholder="E-mail" id="email" required>
                     <br>
                     <button type="submit" id="submit">Submit</button>

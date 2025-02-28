@@ -6,10 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const popupForm = document.getElementById("popupForm");
     const closeButton = document.getElementById("closeButton1");
     const applicationForm = document.getElementById("applicationForm");
-    const firstNameInput = document.getElementById("firstName");
+    const fullNameInput = document.getElementById("fullName");
     const mobileInput = document.getElementById("mobile");
     const emailInput = document.getElementById("email");
-    const firstNameError = document.getElementById("firstNameError");
+    const fullNameError = document.getElementById("fullNameError");
     const mobileError = document.getElementById("mobileError");
     const emailError = document.getElementById("emailError");
     const menuButton = document.getElementById("menuButton");
@@ -71,14 +71,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
         let isValid = true;
 
-        // Validate First Name
-        if (firstNameInput.value.trim() === "") {
-            firstNameError.textContent = "Insert a valid name";
-            firstNameError.style.display = "block";
-            firstNameInput.focus();
+        // Validate Full Name
+        if (fullNameInput.value.trim() === "") {
+            fullNameError.textContent = "Insert a valid name";
+            fullNameError.style.display = "block";
+            fullNameInput.focus();
             isValid = false;
         } else {
-            firstNameError.style.display = "none";
+            fullNameError.style.display = "none";
         }
 
         // Validate Mobile (10 digits)
