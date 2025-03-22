@@ -1,665 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gurukulam Studies</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> 
-    <link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+     <title>Get Ready - Coming Soon Template</title>
+<!-- 
+
+Get Ready Template
+
+http://www.templatemo.com/tm-521-get-ready
+
+-->
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="team" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="ccss/bootstrap.min.css">
+     <link rel="stylesheet" href="ccss/vegas.min.css">
+     <link rel="stylesheet" href="ccss/font-awesome.min.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="ccss/templatemo-style.css">
+
+</head>
 <body>
-    <div id="siteNavigation" class="siteNavigation">
-        <div class="navigation">
-            <div id="sideMenu" class="side-menu">
-                <button id="sideCloseButton" class="close-btn">&times;</button>
-                <ul>
-                    <div class="imgSidemenu">
-                        <img src="images/top-logo-beige.png" style="width: 100%; margin: 8px auto;" alt="Gurukulam Studies">
-                    </div>
-                    <li><a href="index.html" class="animated-underline"> Home</a></li>
-                    <li><a href="gallery.html" class="animated-underline">Gallery</a></li>
-                    <li><a href="aboutus.html" class="animated-underline">About Us</a></li>
-                    <li><a href="contactus.html" class="animated-underline">Contact Us</a></li>
-                    <li><a href="privacypolicies.html" class="animated-underline">Privacy Policy</a></li>
-                    <li><a href="terms&conditions.html" class="animated-underline">Terms & Conditions</a></li>
-                    <li><p class="animated-underline" style="font-size: 18px; margin: 0;">Help?</p></li>
-                </ul>
-                <div class="supportSec">
-                    <a href="tel:+91234567890">
-                        <div style="display: flex; width: fit-content; margin: auto;">
-                            <div style="display: inline-block;">
-                                <img src="images/support.png" style="width: 32px; margin-right: 12px; display: inline-block;" alt="">
-                            </div> 
-                            <div style="display: inline-block;">
-                                <h4 style="margin: 2px;"> Call Us</h4>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://wa.me/+91234567890">
-                        <div style="display: flex; width: fit-content; margin: auto;">
-                            <div style="display: inline-block;">
-                                <img src="images/support1.png" style="width: 32px; margin-right: 12px; display: inline-block;" alt="">
-                            </div> 
-                            <div style="display: inline-block;">
-                                <h4 style="margin: 2px;"> Live Chat</h4>
-                            </div>
-                        </div>
-                    </a>
-                    </a>
-                </div>
-            </div>
-            <div class="mobileNavigation">
-                <div class="mobBoderBox">
-                    <div class="mobNavViewtop">
-                        <div style="display: flex; justify-content: space-around; width: 35%; margin: auto;">
-                            <p style="margin: 0;">Gurukulam</p>
-                            <p style="margin: 0;">Studies</p>
-                        </div>
-                    </div>
-                    <div class="mobNavView">
-                        <a href="tel:+918220271343"><div>
-                            <img src="images/phone-call.png" style="width: 20px; height: 20px;" alt="">
-                            <p style="margin: 0;">call us</p>
-                        </div></a>
-                        <a href="#myForm"><div>
-                            <img src="images/icons8-telegram-80.png" style="width: 20px; height: 20px;" alt="">
-                            <p style="margin: 0;">enquiry</p>
-                        </div></a>
-                        <a href="./index.html"><img style="max-width: 48px; width: 48px;" src="images/gurukulamLogo.png" alt=""></a>
-                        <a href="#main"><div>
-                            <img src="images/icons8-university-64.png" style="width: 20px; height: 20px;" alt="">
-                            <p style="margin: 0;">Universities</p>
-                        </div></a>
-                        <button id="menuButton1">☰ <p>Menu</p>
-                        </button>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="wideNavigation">
-                <div style="display: flex;">
-                    <div class="navigation" style="width: 10vw;"></div>
-                    <div class="navigation" style="width: 80vw;">
-                        <div style="width: fit-content; margin: 0 auto;">
-                            <div style="display: flex; align-items: center;">
-                                <div class="navLeft navSec">
-                                    <a href="./aboutus.html"> About Us</a>
-                                    <span style="width: 1px; height: 24px; margin: auto 1px; background-color: black;"></span>
-                                    <a href="gallery.html">Gallery</a>
-                                  
-                                </div>
-                                <div class="navCenter navSec">
-                                    <a href="index.html" style="background: transparent;"><img src="images/top-logo-beige.png" style="height: 80px;" class="" alt="">
-                                    </a>
-                                </div>
-                                <div class="navRight navSec navbar">
-                                    <a href="#resources" onclick="showPopup('Resources')">Universities</a>
-                                    
-                                        <span style="width: 1px; height: 24px; margin: auto 1px; background-color: black;"></span>
-                                        <a href="./contactus.html" onclick="showPopup('plots')">Contact us</a>
-                                
-                                    </div>
-                                
-                                
-                                
-                                    <div id="resources" class="popup">
-                                        <button class="close" onclick="closePopup('resources')">Close</button>
-                                        <h1>Universities</h1>
-                                        <hr style="width: 80%; margin: auto; height: 1px; color: white;">
-                                        <div style="margin-top: 24px; ">
-                                            <a href="index.html#ctu" style="display: inline-block; padding: 8px; text-decoration: none; color: white; font-weight: 600; font-size: 1.5rem;">Can Tho University</a>
-                                            <a href="index.html#pctu" style="display: inline-block; padding: 8px; text-decoration: none; color: white; font-weight: 600; font-size: 1.5rem;">Phan Chau Trinh University</a>
-                                            <a href="index.html#dnu" style="display: inline-block; padding: 8px; text-decoration: none; color: white; font-weight: 600; font-size: 1.5rem;">Dam Nam University</a>
 
-                                        </div>
-                                        
-                                    </div>
-                                    <div id="villas" class="popup">
-                                        <button class="close" onclick="closePopup('services')">Close</button>
-                                        <h1>Services</h1>
-                                        <p>Our services are top-notch.</p>
-                                    </div>
-                                    <div id="about" class="popup">
-                                        <button class="close" onclick="closePopup('about')">Close</button>
-                                        <h1>About</h1>
-                                        <p>Learn more about us.</p>
-                                    </div>
-                                    <div id="contact" class="popup">
-                                        <button class="close" onclick="closePopup('contact')">Close</button>
-                                        <h1>Contact</h1>
-                                        <p>Get in touch with us.</p>
-                                    </div>
-                                    <div id="more" class="popup">
-                                        <button class="close" onclick="closePopup('more')">Close</button>
-                                        <h1>More</h1>
-                                        <p>Find out more information.</p>
-                                
-                                
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="navigation">
-                    
-                        <button class="menuButton" id="menuButton"> ☰ Menu</button>
+     <!-- PRE LOADER -->
+     <section class="preloader">
+          <div class="spinner">
 
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="header">
-        <div class="topLogo">
-            <img src="images/top-logo-beige.png" style="height: 80px;" alt="">
-        </div>
-        <h1>Pathway to your MBBS dreams in Abroad</h1>
-        <div class="breadcrumb">Admissions » Ongoing</div>
-    </div>
-    <div class="main" id="main">
-        <h2 class="black">Study MBBS in Vietnam</h2>
-        <h2 class="ongoing-button">Universities</h2>
-        <div class="search-location">
-            <select id="filter" onchange="filterList()">
-                <option value="all"> Search All Universities</option>
-                <option value="ctu">Can Tho University</option>
-                <option value="pctu">Phan Chau Trinh University</option>
-                <option value="dnu">Dam Nam University</option>
-            </select>
-        </div>
-    </div>
-    <div class="projects" id="itemList">
-        <div class="project ctu" id="ctu">
-            <div class="universityTitle">
-                <h2 style="display: inline-block;">Can Tho University (CTU) </h2>
-                <!-- <img src="images/universities/images.png" alt="" style="width: 100px; display: inline-block; height:100px"> -->
-            </div>
-            <div class="universitySec">
-                <div style="padding: 4px; border-radius: 12px;">
-                    <img src="images/universities/can-tho-university-6109240_960_720.jpg" style="border-radius: 16px;" alt="">
-                    <div class="fees">
-                        <h2>University Fee : <span>4 Lakhs / Year</span></h2>
-                    </div>
-                </div>
-                <div class="universityDetails">
-
-                    <div class="features">
-                        <div>
-                            <h3>Institution Overview</h3>
-                        <p>🎓 43 Year Old University</p>
-                        </div>
-                        <div>
-                            <h3>Accreditation and Curriculum</h3>
-                        <p>✅ NMC-Recognised for Indian Students</p>
-                        <p>📘 Indian Curriculum</p>
-                        </div>
-                        <div>
-                            <h3>Academic Features</h3>
-                            <p>🏥 Early Clinical Exposure from 1st Year </p>
-                            <P>💸 Affordable at ₹6 Lakhs per Year </P>
-                            <p>🧬 Access to 25+ Cadavers for Anatomy </p>
-                        
-                        </div>
-                        <div>
-                            <h3> Facilities</h3>
-                            <p>🏢 Modern Infrastructure and Labs</p>
-                            <p>🛌 Luxurious Hostel with Indian Food</p>
-                        </div>
-                        <div>
-                            <h3>Environment</h3>
-                            <p>🌏 Supportive and Culturally Friendly Environment</p>
-                        </div>
-                        <div>
-                            <h3>Accessibility</h3>
-                            <p>✈️ Direct, 4-Hour Flight from India</p>
-                        </div>
-    
-                    </div>
-                    <div>
-                        <button id="applyButton" class="applyButton">Apply</button>
-                    </div>
-    
-                </div>
-            </div>
-
-            <div class="video-port">
-                <div class="video-container" style="width: 100%;">
-                    <iframe 
-                        id="video1"
-                        src="https://www.youtube.com/embed/vsEawdNMZhI?si=ssYGdaoJR3hq-6gW?controls=1" 
-                        frameborder="0" 
-                        allowfullscreen>
-                    </iframe>
-                </div>
-            </div>
-        </div>
-
-        <div class="project pctu" id="pctu">
-            <div class="universityTitle">
-                <h2 style="display: inline-block;">Phan Chau Trinh University (PCTU)</h2>
-                <!-- <img src="images/universities/images.png" alt="" style="width: 100px; display: inline-block; height:100px"> -->
-            </div>
-            <div class="universitySec">
-                <div style="padding: 4px; border-radius: 12px;">
-                    <img src="images/universities/pctu.webp" style="border-radius: 16px;" alt="">
-                    <div class="fees">
-                        <h2>University Fee : <span>4 Lakhs / Year</span></h2>
-                    </div>
-                </div>
-                <div class="universityDetails">
-    
-                    <div class="features">
-                        <div>
-                            <h3>Institution Overview</h3>
-                        <p>🎓 Top Private University</p>
-                        </div>
-                        <div>
-                            <h3>Accreditation and Curriculum</h3>
-                        <p>✅ NMC-Recognised for Indian Students</p>
-                        <p>📘 US-Modeled Curriculum, NEXT/USMLE Ready</p>
-                        </div>
-                        <div>
-                            <h3>Facilities and Features</h3>
-                            <p>🏥 Clinical Exposure Starting from 1st Year </p>
-                            <P>🏢 Medical Museum, Simulation Hospital & Stem Cell Research Centre </P>
-                            <p>🏨 9 University-Owned Hospitals </p>
-                            <p>🛌 Luxurious Hostel with Indian Food</p>
-                        </div>
-                        <div>
-                            <h3> Tution and Expenses</h3>
-                            <p>💸 Affordable Tuition at ₹4 Lakhs per Year</p>
-                        </div>
-                        <div>
-                            <h3>Additional Academic Opportunities</h3>
-                            <p>🧬 Hands-On Anatomy with 25+ Cadavers</p>
-                        </div>
-                        <div>
-                            <h3>Accessibility</h3>
-                            <p>✈️ Direct, 4-Hour Flight from India</p>
-                        </div>
-    
-                    </div>
-                    <div>
-                        <button id="applyButton1" class="applyButton">Apply</button>
-                    </div>
-    
-                </div>
-            </div>
-            <div class="video-port">
-                <div class="video-container"  style="width: 100%;">
-                    <iframe 
-                        id="video2"
-                        src="https://www.youtube.com/embed/y_XaJ_jOBV0?si=aMGw5jIX60RbJ6yd?controls=1" 
-                        frameborder="0" 
-                        allowfullscreen>
-                    </iframe>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="project dnu" id="dnu">
-            <div class="universityTitle">
-                <h2 style="display: inline-block;">Dai Nam University (DNU)</h2>
-                <!-- <img src="images/universities/images.png" alt="" style="width: 100px; display: inline-block; height:100px"> -->
-            </div>
-            <div class="universitySec">
-                            <div style="padding: 4px; border-radius: 12px;">
-                <img src="images/universities/dnu.png" style="border-radius: 16px;" alt="">
-                <div class="fees">
-                    <h2>University Fee : <span>3.5 Lakhs / Year</span></h2>
-                </div>
-            </div>
-            <div class="universityDetails">
-
-                <div class="features">
-                    <div>
-                        <h3>Institution Overview</h3>
-                    <p>🎓 Top Private University in Hanoi</p>
-                    </div>
-                    <div>
-                        <h3>Accreditation and Curriculum</h3>
-                    <p>✅ NMC-Recognised for Indian Students</p>
-                    <p>📘 NEXT Exam Ready</p>
-                    </div>
-                    <div>
-                        <h3>Academic Features</h3>
-                        <p>🏥 Clinical Exposure Starting from 1st Year </p>
-                        <p>🧬 Hands-On Anatomy with 10+ Cadavers </p>
-                        <p>🛌 Luxurious Hostel with Indian Food</p>
-                    </div>
-                    <div>
-                        <h3> Tution and Expenses</h3>
-                        <p>💸 Affordable Tuition at ₹3.5 Lakhs per Year</p>
-                    </div>
-                    <div>
-                        <h3>Additional Academic Opportunities</h3>
-                        <p>🧬 Hands-On Anatomy with 25+ Cadavers</p>
-                    </div>
-                    <div>
-                        <h3>Accessibility</h3>
-                        <p>✈️ Direct, 3 Hour Flight from India</p>
-                    </div>
-
-                </div>
-                <div>
-                    <button id="applyButton2" class="applyButton">Apply</button>
-                </div>
-
-            </div>
-            </div>
-            <div class="video-port">
-                <div class="video-container"  style="width: 100%;">
-                    <iframe 
-                        id="video3"
-                        src="https://www.youtube.com/embed/e7Zfy3OqdHY?si=NOgWXre5B6vw3BiM?controls=1" 
-                        frameborder="0" 
-                        allowfullscreen>
-                    </iframe>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="elegiblity-container" id="facilities">
-        <h3 class="head">Eligibility Criteria</h3>
-        <p>Student must be 17 years old and should secure 60% in PCB (Physics, Chemistry and Biology) in 12th board exam. NEET is not mandatory.</p>
-        <div class="eligiblity-List">
-            <div>
-                <img src="./images/eligiblity.jpg" class="model-image1" alt="Eligibility image">
-            </div>
-            <ol class="features" style="list-style: url('./images/arrow-right-solid.svg');">
-                <li>                
-                    <div>
-                    <h3>Age</h3>
-                    <p>Applicants must have reached the age of 17 at the time of enrolling themselves in the MBBS course.</p>
-                    </div>
-                </li>
-                <li>                
-                    <div>
-                    <h3>Education</h3>
-                    <p>Successful completion of Higher Secondary or equivalent 12th examination is mandatory.</p>
-                    </div>
-                </li>
-                <li>                
-                    <div>
-                    <h3>Documents</h3>
-                    <p>It's essential to furnish all required documents to the authorities during the admission process.</p>
-                    </div>
-                </li>
-                <li>                
-                    <div>
-                    <h3>Group</h3>
-                    <p>Physics, Chemistry, and Biology should have been the primary subjects during Higher Secondary studies.</p>
-                    </div>
-                </li>
-                <li>                
-                    <div>
-                    <h3>Score</h3>
-                    <p>Attaining a minimum of 50% marks in Physics, Chemistry, and Biology, along with a total aggregate of 50%, is a prerequisite.</p>
-                    </div>
-                </li>
-            </ol>
-            <div class="features">
-
-            </div>
-        </div>
-    </div>
-    <div class="elegiblity-container" id="elegiblity">
-        <h3 class="head">Hostel Facilities</h3>
-        <div class="model-list">
-           <div>
-                <img src="./images/hostel-room.webp" class="model-image2" alt="Eligibility image">
-            </div>
-
-            <div class="features">
-                <h3>Separate Hostels For Girls and Boys!</h3>
-                <p>Discover a secure and comfortable living environment tailored for your needs. Our separate hostels for girls and boys provide a space where privacy, safety, and comfort take center stage. Experience a supportive community, focused on creating an atmosphere conducive to both academic success and personal growth.</p>
-            </div> 
-        </div>
-
-        <div class="model-list-reverse">
-            <div>
-                 <img src="./images/support3,2.jpg" class="model-image2" alt="Eligibility image">
-             </div>
- 
-             <div class="features">
-                <h3>24/7 assistance with Indian hostel in-charge!</h3>
-                <p>Feel secure and supported with our 24/7 assistance led by our Indian hostel in-charge. Your well-being is our commitment, ensuring a smooth and worry-free stay throughout your journey. Welcome to a home where assistance is always just a moment away!</p>
-             </div> 
-         </div>
-
-         <div class="model-list">
-            <div>
-                 <img src="./images/food.webp" class="model-image2" alt="Eligibility image">
-             </div>
- 
-             <div class="features">
-                <h3>Delicious 24/7 assistance Indian Food for Indian Students </h3>
-                <p>Experience the warmth of familiar flavors with our delicious Indian cuisine, thoughtfully prepared for Indian students at Aieraa Overseas Hospitality. From aromatic curries to mouthwatering delicacies, our menu is crafted to bring you the taste of home.</p>
-             </div> 
-         </div>
-    </div>
-
-    <div class="review-container">
-        <h2>Testimonials</h2>
-        <div class="review-wrapper">
-            <div class="review-slide">
-                <iframe 
-                    id="reviewVideo1"
-                    src="https://www.youtube.com/embed/VIDEO_ID_1?controls=1"
-                    frameborder="0"
-                    allowfullscreen>
-                </iframe>
-            </div>
-            <div class="review-slide">
-                <iframe 
-                    id="reviewVideo2"
-                    src="https://www.youtube.com/embed/VIDEO_ID_2?controls=1"
-                    frameborder="0"
-                    allowfullscreen>
-                </iframe>
-            </div>
-            <div class="review-slide">
-                <iframe 
-                    id="reviewVideo3"
-                    src="https://www.youtube.com/embed/VIDEO_ID_3?controls=1"
-                    frameborder="0"
-                    allowfullscreen>
-                </iframe>
-            </div>
-        </div>
-        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
-        <button class="next" onclick="plusSlides(1)">&#10095;</button>
-    </div>
-    
-    <!-- Popup Form -->
-    <div id="popupForm" class="popup1">
-        <div class="popup-content1">
-            <span id="closeButton1" class="close1">&times;</span>
-            <h2 style="text-align: center;">Apply Now</h2>
-            <p>"Have questions about studying abroad, admissions, or career guidance? Fill out the form below, and our team will get back to you shortly."</p>
-            <form id="applicationForm">
-                <label for="fullName"> Full Name: <span>*</span></label>
-                <input type="text" id="fullName" name="fullName" placeholder="Enter your Full Name" required>
-                <span id="fullNameError" class="error"></span>
-
-                <input type="hidden" name="collage name" value="" id="collageDetails">
-
-                <label for="mobile">Mobile: <span>*</span></label>
-                <input type="text" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
-                <span id="mobileError" class="error"></span>
-
-                <label for="email">Email: <span>*</span></label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                <span id="emailError" class="error"></span>
-
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-    </div>
-
-    <footer style="color: black;">
-        <h3 class="footerHeadWide" style="text-align: center;">Get in Touch with Our Educational Experts!</h3>
-        <div class="enquiryForm">
-            <div style="padding: 4px; padding-top: 20px; border-radius: 12px;">
-                <div class="video-container">
-                    <iframe 
-                        id="video4"
-                        src="https://www.youtube.com/embed/y_XaJ_jOBV0?si=aMGw5jIX60RbJ6yd?controls=1" 
-                        frameborder="0" 
-                        allowfullscreen>
-                    </iframe>
-                </div>
-            </div>
-            <div style="margin: auto;">
-                <h3 style="text-align: center;" class="footerHeadMob">Get in Touch with Our Educational Experts!</h3>
-
-                <form action="" id="myForm">
-                    <p>"Have questions about studying abroad, admissions, or career guidance? Fill out the form below, and our team will get back to you shortly."</p>
-                    <input type="text" id="fullName" class="contactInput" name="fullName" placeholder="Full Name" required pattern="[A-Za-z]+" title="Full Name should only contain letters">
-                     <input type="tel" name="phone" class="contactInput" id="phone" placeholder="Phone" required pattern="[0-9]{10}" title="Phone number should be 10 digits.">
-                    <input type="email" name="email" class="contactInput" placeholder="E-mail" id="email" required>
-                    <br>
-                    <button type="submit" id="submit">Submit</button>
-                </form> 
-            </div>
-         </div>
-        <div class="footerGrid" style="padding: 20px;">
-          <div class="footerContenSec" id="footerContenSec0">
-            <h3 style="margin-left: auto; margin-right: auto;">Quick Links</h3>
-            <ul class="menuItems">
-                <li><a href="index.html" class="animated-underline">Home</a></li>
-              <li><a href="aboutus.html" class="animated-underline">About Us</a></li>
-               <li><a href="gallery.html" class="animated-underline">Gallery</a></li>
-               <li><a href="contactus.html" class="animated-underline">Contact Us</a></li>
-              <li><a href="contactus.html#faq" class="animated-underline">FAQ</a></li>
-              <li><a href="index.html#elegiblity" class="animated-underline">Elegiblity</a></li>
-            </ul>
+               <span class="spinner-rotate"></span>
+               
           </div>
-
-          <hr style="height: 1px; width: 80vw; margin-left: auto; margin-right: auto;">
-          <div class="footerContenSec" id="footerContentSec1">
-            <h3>Our Partners</h3>
-            <ul class="menuItems">
-              <li><a href="#ctu" class="animated-underline">Can Tho University</a></li>
-              <li><a href="#pctu" class="animated-underline">Phan Chau Trinh University</a></li>
-              <li><a href="#dnu" class="animated-underline">Dam Nam University</a></li>
-            </ul>
-          </div>
-          <hr style="height: 1px; width: 80vw; margin-left: auto; margin-right: auto;">
-
-          <div class="footerContenSec" id="address">
-            <h3>Office Address</h3>
-            <p>52, Eawaran Koil Street, <br> Ramapuram, <br> Ilandaikulam, <br> Alandur, <br> Chennai,<br> Tamilnadu - 600016</p>
-          </div>
-          <hr style="height: 1px; width: 80vw; margin-left: auto; margin-right: auto;">
+     </section>
 
 
-        </div>
-        <div style="text-align: center;">
-            <ul class="social-links">
-                <li class="facebook"><a target="_blank" href="https://www.facebook.com/profile.php?id=61571233043872&mibextid=ZbWKwL" aria-label="facebook page"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
-                    <path d="M 25 3 C 12.861562 3 3 12.861562 3 25 C 3 36.019135 11.127533 45.138355 21.712891 46.728516 L 22.861328 46.902344 L 22.861328 29.566406 L 17.664062 29.566406 L 17.664062 26.046875 L 22.861328 26.046875 L 22.861328 21.373047 C 22.861328 18.494965 23.551973 16.599417 24.695312 15.410156 C 25.838652 14.220896 27.528004 13.621094 29.878906 13.621094 C 31.758714 13.621094 32.490022 13.734993 33.185547 13.820312 L 33.185547 16.701172 L 30.738281 16.701172 C 29.349697 16.701172 28.210449 17.475903 27.619141 18.507812 C 27.027832 19.539724 26.84375 20.771816 26.84375 22.027344 L 26.84375 26.044922 L 32.966797 26.044922 L 32.421875 29.564453 L 26.84375 29.564453 L 26.84375 46.929688 L 27.978516 46.775391 C 38.71434 45.319366 47 36.126845 47 25 C 47 12.861562 37.138438 3 25 3 z M 25 5 C 36.057562 5 45 13.942438 45 25 C 45 34.729791 38.035799 42.731796 28.84375 44.533203 L 28.84375 31.564453 L 34.136719 31.564453 L 35.298828 24.044922 L 28.84375 24.044922 L 28.84375 22.027344 C 28.84375 20.989871 29.033574 20.060293 29.353516 19.501953 C 29.673457 18.943614 29.981865 18.701172 30.738281 18.701172 L 35.185547 18.701172 L 35.185547 12.009766 L 34.318359 11.892578 C 33.718567 11.811418 32.349197 11.621094 29.878906 11.621094 C 27.175808 11.621094 24.855567 12.357448 23.253906 14.023438 C 21.652246 15.689426 20.861328 18.170128 20.861328 21.373047 L 20.861328 24.046875 L 15.664062 24.046875 L 15.664062 31.566406 L 20.861328 31.566406 L 20.861328 44.470703 C 11.816995 42.554813 5 34.624447 5 25 C 5 13.942438 13.942438 5 25 5 z M 25 12 C 20.037593 12 16 16.037593 16 21 C 16 25.962407 20.037593 30 25 30 C 29.962407 30 34 25.962407 34 21 C 34 16.037593 29.962407 12 25 12 z M 25 14 C 28.855407 14 32 17.144593 32 21 C 32 24.855407 28.855407 28 25 28 C 21.144593 28 18 24.855407 18 21 C 18 17.144593 21.144593 14 25 14 z"></path>
-                    </svg></i></a></li>
-                <li class="twitter"><a target="_blank" href="https://x.com/Wephoton" aria-label="twitter page">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
-                        <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
-                      </svg>
-                </i></a></li>
-                <li class="instagram"><a target="_blank" href="https://www.instagram.com/wephoton.in/profilecard/?igsh=MWVncjR6ZWExeDlmMA==" aria-label="instagram page"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
-                    <path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"></path>
-                    </svg>
-                </a></li>
-                <!-- <li class="pinterest"><a target="_blank" href="https://pin.it/5vlrvH35l" aria-label="pinterest page"><i class="fa fa-pinterest"></i></a></li> -->
-                <li class="linkedin"><a target="_blank" href="https://www.linkedin.com/company/wephoton/" aria-label="linkedin page"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
-                    <path d="M 9 4 C 6.2504839 4 4 6.2504839 4 9 L 4 41 C 4 43.749516 6.2504839 46 9 46 L 41 46 C 43.749516 46 46 43.749516 46 41 L 46 9 C 46 6.2504839 43.749516 4 41 4 L 9 4 z M 9 6 L 41 6 C 42.668484 6 44 7.3315161 44 9 L 44 41 C 44 42.668484 42.668484 44 41 44 L 9 44 C 7.3315161 44 6 42.668484 6 41 L 6 9 C 6 7.3315161 7.3315161 6 9 6 z M 14 11.011719 C 12.904779 11.011719 11.919219 11.339079 11.189453 11.953125 C 10.459687 12.567171 10.011719 13.484511 10.011719 14.466797 C 10.011719 16.333977 11.631285 17.789609 13.691406 17.933594 A 0.98809878 0.98809878 0 0 0 13.695312 17.935547 A 0.98809878 0.98809878 0 0 0 14 17.988281 C 16.27301 17.988281 17.988281 16.396083 17.988281 14.466797 A 0.98809878 0.98809878 0 0 0 17.986328 14.414062 C 17.884577 12.513831 16.190443 11.011719 14 11.011719 z M 14 12.988281 C 15.392231 12.988281 15.94197 13.610038 16.001953 14.492188 C 15.989803 15.348434 15.460091 16.011719 14 16.011719 C 12.614594 16.011719 11.988281 15.302225 11.988281 14.466797 C 11.988281 14.049083 12.140703 13.734298 12.460938 13.464844 C 12.78117 13.19539 13.295221 12.988281 14 12.988281 z M 11 19 A 1.0001 1.0001 0 0 0 10 20 L 10 39 A 1.0001 1.0001 0 0 0 11 40 L 17 40 A 1.0001 1.0001 0 0 0 18 39 L 18 33.134766 L 18 20 A 1.0001 1.0001 0 0 0 17 19 L 11 19 z M 20 19 A 1.0001 1.0001 0 0 0 19 20 L 19 39 A 1.0001 1.0001 0 0 0 20 40 L 26 40 A 1.0001 1.0001 0 0 0 27 39 L 27 29 C 27 28.170333 27.226394 27.345035 27.625 26.804688 C 28.023606 26.264339 28.526466 25.940057 29.482422 25.957031 C 30.468166 25.973981 30.989999 26.311669 31.384766 26.841797 C 31.779532 27.371924 32 28.166667 32 29 L 32 39 A 1.0001 1.0001 0 0 0 33 40 L 39 40 A 1.0001 1.0001 0 0 0 40 39 L 40 28.261719 C 40 25.300181 39.122788 22.95433 37.619141 21.367188 C 36.115493 19.780044 34.024172 19 31.8125 19 C 29.710483 19 28.110853 19.704889 27 20.423828 L 27 20 A 1.0001 1.0001 0 0 0 26 19 L 20 19 z M 12 21 L 16 21 L 16 33.134766 L 16 38 L 12 38 L 12 21 z M 21 21 L 25 21 L 25 22.560547 A 1.0001 1.0001 0 0 0 26.798828 23.162109 C 26.798828 23.162109 28.369194 21 31.8125 21 C 33.565828 21 35.069366 21.582581 36.167969 22.742188 C 37.266572 23.901794 38 25.688257 38 28.261719 L 38 38 L 34 38 L 34 29 C 34 27.833333 33.720468 26.627107 32.990234 25.646484 C 32.260001 24.665862 31.031834 23.983076 29.517578 23.957031 C 27.995534 23.930001 26.747519 24.626988 26.015625 25.619141 C 25.283731 26.611293 25 27.829667 25 29 L 25 38 L 21 38 L 21 21 z"></path>
-                    </svg></a></li>
-                <li class="YouTube"><a target="_blank" href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
-                    <path d="M 24.402344 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.402344 16.898438 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.902344 40.5 17.898438 41 24.5 41 C 31.101563 41 37.097656 40.5 40.597656 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.097656 35.5 C 45.5 33 46 29.402344 46.097656 24.902344 C 46.097656 20.402344 45.597656 16.800781 45.097656 14.300781 C 44.699219 12.101563 42.800781 10.5 40.597656 10 C 37.097656 9.5 31 9 24.402344 9 Z M 24.402344 11 C 31.601563 11 37.398438 11.597656 40.199219 12.097656 C 41.699219 12.5 42.898438 13.5 43.097656 14.800781 C 43.699219 18 44.097656 21.402344 44.097656 24.902344 C 44 29.199219 43.5 32.699219 43.097656 35.199219 C 42.800781 37.097656 40.800781 37.699219 40.199219 37.902344 C 36.597656 38.601563 30.597656 39.097656 24.597656 39.097656 C 18.597656 39.097656 12.5 38.699219 9 37.902344 C 7.5 37.5 6.300781 36.5 6.101563 35.199219 C 5.300781 32.398438 5 28.699219 5 25 C 5 20.398438 5.402344 17 5.800781 14.902344 C 6.101563 13 8.199219 12.398438 8.699219 12.199219 C 12 11.5 18.101563 11 24.402344 11 Z M 19 17 L 19 33 L 33 25 Z M 21 20.402344 L 29 25 L 21 29.597656 Z"></path>
-                    </svg></a></li> 
-            </ul>
-            <ul class="tcppylist">
-                <li><a href="terms&conditions.html" style="color: #000;">Terms & Conditions</a></li>
-                <li><a href="privacypolicies.html" style="color: #000;">Privacy Policy</a></li>
-            </ul>
-        
+     <!-- GRID LINE -->
+    <section class="grid">
+         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <p class="text-center" style="color: #000;">Copyright © 2024 <a target="_blank" href="https://gurukulamstudies.com" style="text-decoration: none; color: #fe0000">Gurukulam Studies</a></p>
-                    <p class="text-center" style="color: #000;">All rights reserved</p>
-                </div>
+
+              <div class="col-md-2 col-sm-2">
+                <div class="grid-line"></div>
+              </div>
+              <div class="col-md-2 col-sm-2">
+                <div class="grid-line"></div>
+              </div>
+              <div class="col-md-2 col-sm-2">
+                <div class="grid-line"></div>
+              </div>
+              <div class="col-md-2 col-sm-2">
+                <div class="grid-line"></div>
+              </div>
+              <div class="col-md-2 col-sm-2">
+                <div class="grid-line"></div>
+              </div>
+
             </div>
-        </div>
-    </footer>
-        <a href="https://wa.me/+91234567890" target="_blank" class="whatsapp-button">
-            <i class="fab fa-whatsapp"></i> 
-        </a>
-<!-- Javascript -->
+         </div>
+    </section>
 
-      <script>
-        let slideIndex = 0;
-showSlides(slideIndex);
 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
+    <div class="menu-bg"></div>
+    <div class="menu-burger">☰</div>
 
-function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("review-slide");
-    if (n >= slides.length) {
-        slideIndex = 0;
-    } 
-    if (n < 0) {
-        slideIndex = slides.length - 1;
-    }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
-    slides[slideIndex].style.display = "block";  
-}
+    <div class="menu-items">
+       <div class="container">
+         <div class="row">
+           <div class="col-md-offset-2 col-md-4 col-sm-6">
+            <h1>Navigations</h1>
+             <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Our Studio</a></li>
+                <li><a href="#">Journal</a></li>
+                <li><a href="#">Start a project</a></li>
+                <li><a href="#">Email Us</a></li>
+            </ul>
+           </div>
 
-      </script>
+           <div class="col-md-4 col-sm-6">
+             <address>
+               <h1>Our Studio</h1>
+               <p>1234 New Street View, <br> Kumasi, Ghana</p>
+               <div class="google-map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1197183.8373802372!2d-1.9415093691103689!3d6.781986417238027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb96f349e85efd%3A0xb8d1e0b88af1f0f5!2sKumasi+Central+Market!5e0!3m2!1sen!2sth!4v1532967884907" allowfullscreen></iframe>
+               </div>
+             </address>
+           </div> 
 
-    <script src="js/script.js"></script>
+           <div class="col-md-12 col-sm-12">
+             <ul class="social-icon">
+              <li class="line"></li>
+               <li><a href="https://fb.com/templatemo" class="fa fa-facebook"></a></li>
+               <li><a href="#" class="fa fa-twitter"></a></li>
+               <li><a href="https://plus.google.com/+templatemo" class="fa fa-google"></a></li>
+               <li><a href="#" class="fa fa-instagram"></a></li>
+             </ul>
+           </div>
+         </div>
+       </div>
+    </div>
 
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-            });
-        });
-    });
 
-    </script>
-<script>
-    function filterList() {
-        const filter = document.getElementById('filter').value;
-        const projects = document.getElementsByClassName('project');
+     <!-- HOME -->
+     <section id="home">
+        <div class="overlay"></div>
+          <div class="container">
+               <div class="row">
 
-        for (let project of projects) {
-            if (filter === 'all') {
-                project.style.display = 'block';
-            } else {
-                if (project.classList.contains(filter)) {
-                    project.style.display = 'block';
-                } else {
-                    project.style.display = 'none';
-                }
-            }
-        }
-    }
+                    <div class="col-md-12 col-sm-12">
+                         <div class="home-info">
+                              <h1>We are getting ready <br>to launch new CREATIVE site!</h1>
+                              <!-- You can change the date time in init.js file -->
+                              <ul class="countdown">
+                                   <li>
+                                        <span class="days">14</span>
+                                        <h3>Days</h3>
+                                   </li>
+                                   <li>
+                                        <span class="hours">10</span>
+                                        <h3>hours</h3>
+                                   </li>
+                                   <li>
+                                        <span class="minutes">15</span>
+                                        <h3>minutes</h3>
+                                   </li>
+                                   <li>
+                                        <span class="seconds">34</span>
+                                        <h3>seconds</h3>
+                                   </li>     
+                              </ul>
+                              <div class="subscribe-form">
+                                <form action="" method="get">
+                                  <input type="email" name="email" class="form-control" placeholder="Enter your email" required="">
+                                  <button type="submit" class="form-control"><i class="fa fa-envelope-o"></i></button>
+                                </form>
+                              </div>
+                         </div>
+                    </div>
 
-    window.onload = function() {
-        filterList(); // Default filter on page load
-    }
-</script>
+               </div>
+          </div>
+     </section>
+
+     <!-- SCRIPTS -->
+     <script src="cjs/jquery.js"></script>
+     <script src="cjs/bootstrap.min.js"></script>
+     <script src="cjs/vegas.min.js"></script>
+     <script src="cjs/countdown.js"></script>
+     <script src="cjs/init.js"></script>
+     <script src="cjs/custom.js"></script>
+
 </body>
 </html>
