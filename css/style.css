@@ -114,7 +114,8 @@ h4 {
         height: 70px;
         text-align: center;
         z-index: 2;
-        background-color: #fe0000;
+        /* background-color: #fe0000; */
+        background-color: var(--theme-1);
         border-radius: 35px;
         border: 1px solid #00000080;
         margin-left: 1%;
@@ -920,7 +921,8 @@ html {
     min-width: fit-content;
     padding: 8px 12px;
     margin: 20px auto ;
-    background-color: #fe0000; /* Todo*/
+    /* background-color: #fe0000; */
+    background-color: var(--theme-1);
     color: #ffffff;
     border: none;
     border-radius: 24px;
@@ -932,8 +934,8 @@ html {
     /* Todo */
     background-color: #000000;
     color: #ffed29;
-    margin: 20px auto;
-    padding: 4px 12px;
+    /* margin: 20px auto; */
+    /* padding: 4px 12px; */
     font-size: 24px;
 
 }
