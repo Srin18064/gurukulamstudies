@@ -21,7 +21,8 @@ header p{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 h2 {
-    color: #fe0000;
+    /* color: #fe0000; */
+    color: var(--theme-1);
     margin-bottom: 10px;
 }
 p {
@@ -52,7 +53,8 @@ p {
     margin-bottom: 16px;
 }
 .impact-section h2 {
-    color: #fe0000;
+    /* color: #fe0000; */
+    color: var(--theme-1);
     font-size: 1.6em;
     margin-bottom: 10px;
 }
@@ -72,7 +74,8 @@ p {
 }
 .impact-card {
     background-color: #ffed29;
-    border: 2px solid #fe0000;
+    /* border: 2px solid #fe0000; */
+    border: 2px solid var(--theme-1);
     border-radius: 10px;
     text-align: center;
     padding: 20px;

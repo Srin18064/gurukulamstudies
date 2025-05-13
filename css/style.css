@@ -5,6 +5,14 @@ body {
     background-color: #ffed29;
 }
 
+:root {
+    /* --theme-1: #a21d2f; */
+    --theme-11: #fe0000;
+    --theme-22: #ffed29;
+    --theme-1: #be2239;
+    --theme-2: #c4971a;
+}
+
 body, td{
     font: 16px "Roboto", sans-serif;
 }
@@ -344,7 +352,8 @@ svg {
     margin: 0;
 }
 .ongoing-button {
-    background-color: #fe0000;
+    /* background-color: #fe0000; */
+    background-color: var(--theme-1);
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -375,7 +384,8 @@ svg {
     flex-wrap: wrap;
 }
 .project {
-    background-color: #fe0000;
+    /* background-color: #fe0000; */
+    background-color: var(--theme-1);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     overflow: hidden;
@@ -807,7 +817,8 @@ label {
     padding-left: 4%;
     padding-right: 4%;
     background-color: #ffffff;
-    border: 1px solid #fe0000;
+    /* border: 1px solid #fe0000; */
+    border: 1px solid var(--theme-1);
     box-shadow: 0, 0, 8px rgba(221, 221, 221, 0.39);
 }
 
@@ -823,7 +834,8 @@ label {
     padding-right: 25px;
     margin-top: 8px;
     color: white;
-    background-color: #fe0000;
+    /* background-color: #fe0000; */
+    background-color: var(--theme-1);
     border: 1px solid #ffed29;
 }
 
@@ -942,7 +954,9 @@ body {
 #menuButton {
     font-size: 24px;
     padding: 6px 20px;
-    background-color: #fe0000;
+    /* background-color: #fe0000; */
+    background-color: var(--theme-1);
+    /* background-color: var(--input-hovered-color); */
     color: white;
     border: none;
     cursor: pointer;
@@ -1119,7 +1133,8 @@ body {
 	color: grey;
 }
 .highlighter {
-    color: #fe0000;
+    /* color: #fe0000; */
+    color: var(--theme-1);
     font-weight: 600;
 }
 
@@ -1206,6 +1221,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
     transition: background-color 0.3s ease;
 }
 .whatsapp-button:hover {
@@ -1265,7 +1281,8 @@ body {
     padding: 8px;
     margin: 4px auto;
     color: #ffffff;
-    background-color: #fe0000;
+    /* background-color: #fe0000; */
+    background-color: var(--theme-1);
     /* width: fit-content; */
     border-radius: 16px;
     box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
