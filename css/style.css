@@ -390,6 +390,7 @@ svg {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     overflow: hidden;
+    padding: 20px;
     width: 92vw;
     text-align: center;
     margin: 10px auto;
@@ -509,6 +510,7 @@ footer {
 }
 
 .menuItems a {
+    color: white;
     text-decoration: none;
     line-height: 1.5;
     
@@ -754,6 +756,9 @@ label {
 .contactInput:focus {
     background-color: aliceblue;
 }
+.contactInput:hover {
+    background-color: #f0efef;
+}
 #myForm {
     width: 45vw;
     margin: 16px auto;
@@ -911,6 +916,10 @@ html {
     font-size: 24px;
 }
 
+#applicationForm input:hover {
+    background-color: rgb(237, 237, 237);
+}
+
 #applicationForm input::placeholder {
     font: 16px sans-serif;
 }
@@ -968,7 +977,7 @@ body {
 }
 
 #menuButton:hover {
-    background-color: #ffed29;
+    background-color: red;
     color: #000000;
 }
 
@@ -1070,6 +1079,7 @@ body {
     -ms-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     border: 1px solid #d7d1c5;
+    background-color: #ffffff;
     width: 32px;
     height: 32px;
     display: inline-block;
@@ -1096,12 +1106,12 @@ body {
   }
   .social-links li.instagram a:hover {
     color: #dd3993;
-    background-color: #fff;
+    background-color: var(--theme-22);
     border: 1px solid #dd3993;
   }
   .social-links li.YouTube a:hover {
     color: #b31217;
-    background-color: #fff;
+    background-color: var(--theme-22);
     border: 1px solid #b31217;
   }
   .social-links li.flickr a:hover {
@@ -1110,7 +1120,7 @@ body {
   }
   .social-links li.facebook a:hover {
     color: #3b5998;
-    background-color: #fff;
+    background-color: var(--theme-22);
     border: 1px solid #3b5998;
   }
   .social-links li.pinterest a:hover {
@@ -1127,11 +1137,10 @@ body {
 .tcppylist li{
     display: inline-block;
     margin: 10px;
-    
 }
 
 .tcppylist li:hover{
-	font-weight: 600;
+	/* font-weight: 600; */
 	color: grey;
 }
 .highlighter {
