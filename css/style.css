@@ -2,7 +2,8 @@ body {
     margin: 0;
     padding: 0;
     margin-top: e30009;
-    background-color: #ffed29;
+    /* background-color: #ffed29; */
+    background-color: white;
 }
 
 :root {
@@ -1279,7 +1280,8 @@ body {
     border-radius: 16px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     display: flex;
-    background-color: #fff04a;
+    /* background-color: #fff04a; */
+    background-color: white;
     gap: 12px;
     flex-direction: column;
     text-align: center;
